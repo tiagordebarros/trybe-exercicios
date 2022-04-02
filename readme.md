@@ -1,6 +1,6 @@
 # Trybe
 
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Tiago Ribeiro de Barros](https://www.linkedin.com/in/tiagoribeirodebarros/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) .:rocket:
+Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Tiago Ribeiro de Barros](https://www.linkedin.com/in/tiagoribeirodebarros/)_ enquanto estudante da [Trybe](https://www.betrybe.com/) .:rocket:
 
 > "A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."
 
@@ -24,12 +24,12 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 
 ##### Bloco 1: Introdução - Unix & Shell
 
-- [x] 1-3: _Unix & Shell- Part 1_
-- [x] 1-4: _Unix & Shell- Part 2_
+- [ ] 1-3: _Unix & Shell- Part 1_
+- [ ] 1-4: _Unix & Shell- Part 2_
 
 ##### Bloco 2: Git & GitHub
 
-- [x] 2-1: _O que é para que serve?_
+- [ ] 2-1: _O que é para que serve?_
 - [ ] 2-2: _Entendendo os comandos_
 - [ ] 2-3: _Internet - Entendendo como ela funciona_
 
@@ -45,8 +45,8 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 
 - [ ] 4-1: _JavaScript - Primeiros passos_
 - [ ] 4-2: _JavaScript - Array e loop For_
-- [ ] 4-3: _JavaScript - LÃ³gica de ProgramaÃ§Ã£o e Algoritmos_
-- [ ] 4-4: _JavaScript - Objetos e funÃ§Ãµes_
+- [ ] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
+- [ ] 4-4: _JavaScript - Objetos e funções_
 - [ ] 4-5: _[Projeto - Playground Functions]()_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
@@ -68,7 +68,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [ ] 6-3: _CSS Flexbox - Part 1_
 - [ ] 6-4: _CSS Flexbox - Part 2_
 - [ ] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _[Projeto - PÃ¡gina inicial do Facebook]()_
+- [ ] 6-6: _[Projeto - Página inicial do Facebook]()_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
