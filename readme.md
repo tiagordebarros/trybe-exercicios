@@ -29,8 +29,8 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 
 ##### Bloco 2: Git & GitHub
 
-- [x] 2-1: _O que é para que serve?_
-- [ ] 2-2: _Entendendo os comandos_
+- [x] 2-1: _O que é e para que serve?_
+- [x] 2-2: _Entendendo os comandos_
 - [ ] 2-3: _Internet - Entendendo como ela funciona_
 
 ##### Bloco 3: Introdução - HTML & CSS
