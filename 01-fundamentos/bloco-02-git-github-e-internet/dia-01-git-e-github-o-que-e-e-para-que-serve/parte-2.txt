@@ -1,0 +1,3 @@
+# Resolução dos exercícios: Parte II - Criar conta no GitHub
+
+Se você esta lendo isto é porque a minha conta no GitHub foi criada com sucesso! \o/
