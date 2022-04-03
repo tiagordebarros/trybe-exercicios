@@ -25,7 +25,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 ##### Bloco 1: Introdução - Unix & Shell
 
 - [x] 1-3: _Unix & Shell- Part 1_
-- [ ] 1-4: _Unix & Shell- Part 2_
+- [x] 1-4: _Unix & Shell- Part 2_
 
 ##### Bloco 2: Git & GitHub
 
