@@ -1,0 +1,9 @@
+# Resolução dos exercícios: Dinâmica com Post-its
+
+Este não é um exercício de programação. É uma dinâmica em grupo.
+Os seguites passos foram realizados para a resolução deste exercício:
+
+    1 - Constituimos um grupo chamado "Grupo 404".
+    2 - Criamos um diagrama explicando o que acontece entre o momento que  você digita uma URL no navegador e o momento em que a página inicial da URL aparece na tela.
+    3 - Resumimos os Tipos de Respostas HTTP a requisições, apresentamos o trabalho e mantivemos uma cópia do arquivo.
+    4 - Respondemos indívidualmente a um exercício de redes de computadors, através de um formulário.
