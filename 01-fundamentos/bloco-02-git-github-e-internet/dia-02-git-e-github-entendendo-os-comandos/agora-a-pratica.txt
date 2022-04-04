@@ -1,0 +1,10 @@
+# Resolução dos exercícios: Agora a prática
+
+Os seguites passos foram realizados para a resolução deste exercício:
+
+    1 - Executei com sucessos os procedimentos descritos no "Agora a pratica" do readme.md do dia 2.2.
+    2 - Para a correta resolução do exercício supramencionado, necessitei criar duas novas branchs, a saber:
+        2.1 - trybe-skills-changes
+        2.2 - trybe-skills-updates
+    3 - As branchs já mencionadas fazem parte deste mesmo repositório.
+    4 - Os arquivos criados durante a resolução desses exercícios, encontram-se nas respectivas branchs.

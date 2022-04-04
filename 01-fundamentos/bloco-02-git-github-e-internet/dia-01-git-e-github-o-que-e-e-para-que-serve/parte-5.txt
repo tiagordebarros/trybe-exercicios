@@ -1,0 +1,6 @@
+# Resolução dos exercícios: Parte 5 - Habilitando Two Factor Authentication no seu GitHub
+
+Os seguites passos foram realizados para a resolução deste exercício:
+
+    1 - Instalei o aplicativo Authy no smartphone.
+    2 - Executei com sucessos os procedimentos descritos no "Parte 5" do readme.md do dia 2.1.
