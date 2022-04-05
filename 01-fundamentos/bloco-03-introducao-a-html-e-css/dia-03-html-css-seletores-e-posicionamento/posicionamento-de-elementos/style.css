@@ -1,3 +1,8 @@
+p {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+}
 .super-mario {
     width: 200px;
     position: absolute;
