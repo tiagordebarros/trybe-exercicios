@@ -1,0 +1,56 @@
+body h1 {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+ol {
+  background-color: yellow;
+}
+
+h1 , h3 {
+  color: red;
+}
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: 700;
+}
+
+.numeros-par {
+  color: green;
+}
+
+.numeros-impar {
+  text-transform: uppercase;
+}
+
+.top-3-linguagens {
+  color: blue;
+}
+
+.qualquer-id-java {
+  background-color: pink;
+}
+
+#stack-overflow:hover {
+  color: orange;
+}
+
+#w3schools:hover {
+  color: green;
+}
+
+#mdn:hover {
+  color: black;
+}
+
+#dev-docs:hover {
+  color: yellow;
+}
+
+#trybe:hover {
+  color: green;
+}

@@ -1,0 +1,15 @@
+h1 , p , ol , ul {
+  text-align: center;
+}
+
+ol , ul {
+  list-style: none;
+}
+
+li:hover {
+  background-color: chartreuse;
+}
+
+li:active {
+  color: darkgreen;
+}
