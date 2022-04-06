@@ -1,0 +1,11 @@
+ol {
+  background-color: yellow;
+}
+
+.numeros-par {
+  color: green;
+}
+
+.numeros-impar {
+  text-transform: uppercase;
+}
