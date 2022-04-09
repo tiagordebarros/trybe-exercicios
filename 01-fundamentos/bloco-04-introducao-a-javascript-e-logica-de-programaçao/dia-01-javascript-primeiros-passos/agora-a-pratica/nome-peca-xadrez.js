@@ -1,6 +1,6 @@
 let pecaXadrez = "rei";
 
-switch (pecaXadrez) {
+switch (pecaXadrez.toLowerCase()) {
     case "rei":
         console.log("Avança em todas as direções somente uma casa por vez");
         break;
