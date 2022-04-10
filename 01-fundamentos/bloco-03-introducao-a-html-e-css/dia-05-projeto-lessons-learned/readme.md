@@ -2,7 +2,7 @@
 
 Projeto desenvolvido em HTML e CSS. Clique [aqui](https://tiagordebarros.github.io/projetos/lessons-learned/index.html) para visualizá-lo.
 
-![Lessons Learned](/Users/tiagobarros/Documents/ARQUIVO/EDUCACIONAL/EAD/TRYBE/trybe-exercicios/01-fundamentos/bloco-03-introducao-a-html-e-css/dia-05-projeto-lessons-learned/Imagens/lessons-learned.png)
+![Lessons Learned](./Imagens/lessons-learned.png)
 
 ## Requisitos:
 
