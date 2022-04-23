@@ -44,24 +44,31 @@
     <script>
         //Exercício 1
         function changeDescription() {
-        const description = document.getElementsByTagName("p");
-        description[0].innerText = "Eu me vejo como um desenvolvedor Full Stack!";
+            const description = document.getElementsByTagName("p");
+            description[0].innerText = "Eu me vejo como um desenvolvedor Full Stack!";
         }
         changeDescription();
 
         //Exercício 2
         function changeColor() {
-        const squareColor = document.getElementsByClassName("main-content");
-        squareColor[0].style.backgroundColor = "rgb(76,164,109)";
+            const squareColor = document.getElementsByClassName("main-content");
+            squareColor[0].style.backgroundColor = "rgb(76,164,109)";
         }
         changeColor();
 
         //Exercício 3
         function changeCenterColor() {
-        const centerSquareColor = document.getElementsByClassName("center-content");
-        centerSquareColor[0].style.backgroundColor = "rgb(255,255,255)";
+            const centerSquareColor = document.getElementsByClassName("center-content");
+            centerSquareColor[0].style.backgroundColor = "rgb(255,255,255)";
         }
         changeCenterColor();
+
+        //Exercício 4
+        function fixTitleError() {
+            const title = document.getElementsByClassName("title");
+            title[0].innerText = "Exercício 5.1 - JavaScript";
+        }
+        fixTitleError();
 
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
