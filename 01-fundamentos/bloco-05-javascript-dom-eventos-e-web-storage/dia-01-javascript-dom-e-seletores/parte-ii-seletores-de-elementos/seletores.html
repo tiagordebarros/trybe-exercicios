@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="paragrafo">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph" class="paragrafo">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      paragraph.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+      const title = document.getElementById("page-title");
+      title.innerText = "A Paixão de Cristo";
+      const secondParagraph = document.getElementById("second-paragraph");
+      secondParagraph.style.color = "red";
+      secondParagraph.style.fontFamily = "Verdana";
+      secondParagraph.innerHTML = "<strong>Diretor:</strong> Mel Gibson";
+      const subtitle = document.getElementById("subtitle");
+      subtitle.innerText = "Informações";
+      const paragrafo = document.getElementsByClassName("paragrafo");
+      paragrafo[0].style.color = "black";
+      const subtitulo = document.getElementsByTagName("h4");
+      subtitulo[0].style.color = "black";
+    </script>
+  </body>
+</html>
