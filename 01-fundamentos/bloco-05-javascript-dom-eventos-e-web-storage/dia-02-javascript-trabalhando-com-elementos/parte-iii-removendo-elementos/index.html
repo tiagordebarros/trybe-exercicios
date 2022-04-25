@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="paiDoPai"><!--Não remover-->
+        <section id="pai"><!--Não remover-->
+          <section id="primeiroFilho"></section>
+          <section id="elementoOndeVoceEsta"><!--Não remover-->
+            <section id="primeiroFilhoDoFilho"></section><!--Não remover-->
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho"></section>
+          <section id="quartoEUltimoFilho"></section>
+        </section>
+      </main>
+      <script>
+          const pai = document.getElementById("pai");
+          const primeiroFilho = document.getElementById("primeiroFilho");
+          const elementoOndeVoceEsta = document.getElementById("elementoOndeVoceEsta");
+          const segundoEUltimoFilhoDoFilho = document.getElementById("segundoEUltimoFilhoDoFilho");
+
+          const terceiroFilho = document.getElementById("terceiroFilho");
+          const quartoEUltimoFilho = document.getElementById("quartoEUltimoFilho");
+
+          pai.removeChild(primeiroFilho);
+
+          elementoOndeVoceEsta.removeChild(segundoEUltimoFilhoDoFilho);
+          pai.removeChild(terceiroFilho);
+          pai.removeChild(quartoEUltimoFilho);
+      </script>
+            <!--Solução alternativa-->
+          <!-- const pai = document.getElementById('pai');
+
+          for (let index = pai.childNodes.length - 1; index >= 0; index -= 1) {
+            const currentChildren = pai.childNodes[index];
+            if (currentChildren.id !== 'elementoOndeVoceEsta') {
+              currentChildren.remove();
+            }
+          }
+      
+          const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+          segundoEUltimoFilhoDoFilho.remove(); -->
+</body>
+</html>
