@@ -80,7 +80,13 @@
         const img = document.createElement("img");
         sectionLeft.appendChild(img).src = "https://picsum.photos/200";
         img.className = "small-image";
-        
+        //Exercício 8
+        const ul = document.createElement("ul");
+        sectionRight.appendChild(ul);
+        const listaNumerica = ["Um, Dois, Três, Quatro, Cinco, Seis, Sete, Oito, Nove, Dez"];
+        const li = document.createElement("li");
+        li.innerHTML = listaNumerica;
+        ul.appendChild(li);
     </script>
     
   </body>
