@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="paiDoPai">
+        <section id="pai">
+          <section id="primeiroFilho"></section>
+          <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho"></section>
+          <section id="quartoEUltimoFilho"></section>
+        </section>
+      </main>
+      <script>
+          //Exercício 1
+          const elementoOndeVoceEsta = document.getElementById("elementoOndeVoceEsta");
+          console.log(elementoOndeVoceEsta);
+
+          //Exercício 2
+          const pai = elementoOndeVoceEsta.parentElement;
+          pai.style.color = "red";
+
+          //Exercício 3
+          const filhoDoFilho = elementoOndeVoceEsta.firstElementChild;
+          filhoDoFilho.innerText = "Este é o elemento 'filho do filho'.";
+
+          //Exercício 4
+          const primeiroFilho = pai.firstElementChild;
+
+          //Exercício 5
+          const primeiroFilhoRetorono = elementoOndeVoceEsta.previousElementSibling;
+
+          //Exercício 6
+          const proximoNo = elementoOndeVoceEsta.nextSibling;
+
+          //Exercício 7
+          const proximoElemento = elementoOndeVoceEsta.nextElementSibling;
+
+          //Exercício 8
+          const penultimoElemento = pai.lastElementChild.previousElementSibling;
+
+      </script>
+</body>
+</html>
