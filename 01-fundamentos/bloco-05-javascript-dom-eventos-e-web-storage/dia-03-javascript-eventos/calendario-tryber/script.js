@@ -51,3 +51,28 @@ function createDaysOfTheWeek() {
   };
 
   btnHoliday("Feriados");
+
+  //Exercício 3
+
+    function changeBackgroudColor() {
+        const buttonHoliday = document.querySelector('#btn-holiday');
+        const holiday = document.querySelectorAll('.holiday');
+        const backgroundColor = 'rgb(238,238,238)';
+        const initialColor = '#777';
+        const setNewBackgroundColor = 'green';
+        const setNewColor = "white";
+      
+        buttonHoliday.addEventListener('click', function() {
+          for (let index = 0; index < holiday.length; index += 1) {
+            if (holiday[index].style.backgroundColor === setNewBackgroundColor && holiday[index].style.color === setNewColor) {
+                holiday[index].style.backgroundColor = backgroundColor;
+                holiday[index].style.color = initialColor;
+            } else {
+                holiday[index].style.backgroundColor = setNewBackgroundColor;
+                holiday[index].style.color = setNewColor;
+            }
+          }
+        })
+      };
+      
+      changeBackgroudColor();
