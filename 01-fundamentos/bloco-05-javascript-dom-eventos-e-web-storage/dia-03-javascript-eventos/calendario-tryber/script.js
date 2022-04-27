@@ -38,3 +38,16 @@ function createDaysOfTheWeek() {
   };
 
   createDaysOfTheMonth();
+
+  //Exercício 2
+  
+  function btnHoliday(btnName) {
+      const buttonsContainer = document.querySelector('.buttons-container');
+      const buttonHoliday = document.createElement("button");
+
+      buttonHoliday.innerHTML = btnName;
+      buttonHoliday.id = "btn-holiday";
+      buttonsContainer.appendChild(buttonHoliday);
+  };
+
+  btnHoliday("Feriados");
