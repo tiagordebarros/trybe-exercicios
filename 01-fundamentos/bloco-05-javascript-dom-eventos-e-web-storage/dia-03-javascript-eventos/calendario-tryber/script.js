@@ -156,3 +156,33 @@ function taskColor(color) {
     myTasksContainer.appendChild(taskColorContainer);
 }
 taskColor("green");
+
+//Exercício 9
+
+function taskSelected() {
+    taskColorContainer = document.querySelector("div.task");
+
+    taskColorContainer.addEventListener("click", function () {
+        if (taskColorContainer.className === "task") {
+            taskColorContainer.className = "task selected";
+        } else {
+            taskColorContainer.className = "task";
+        }
+    });
+};
+taskSelected();
+
+    //Solução alternativa
+
+    // function taskSelected() {
+    //     taskColorContainer = document.querySelector("div.task");
+    
+    //     taskColorContainer.addEventListener("click", function (event) {
+    //         if (event.target.className === "task") {
+    //             event.target.className = "task selected";
+    //         } else {
+    //             event.target.className = "task";
+    //         }
+    //     });
+    // };
+    // taskSelected();
