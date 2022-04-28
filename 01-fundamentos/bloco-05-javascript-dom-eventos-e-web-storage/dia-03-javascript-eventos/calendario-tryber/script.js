@@ -99,7 +99,7 @@ function changeFridayText(numbersArray) {
     const buttonFriday = document.querySelector("#btn-friday");
     const fridayDays = document.querySelectorAll("li.day.friday");
 
-    buttonFriday.addEventListener("click", function() {
+    buttonFriday.addEventListener("click", function () {
         for (let index = 0; index < fridayDays.length; index += 1) {
             if (fridayDays[index].innerHTML !== "Sextou!") {
                 fridayDays[index].innerHTML = "Sextou!";
@@ -111,3 +111,23 @@ function changeFridayText(numbersArray) {
 };
 
 changeFridayText(fridayArray);
+
+//Exercício 6
+
+function zoomCalendarNumbers() {
+    const dezDays = document.querySelector('#days');
+
+    dezDays.addEventListener("mouseover", function (event) {
+        event.target.style.fontSize = "35px";
+    });
+};
+zoomCalendarNumbers();
+
+function originalSizeCalendarNumbers() {
+    const dezDays = document.querySelector('#days');
+
+    dezDays.addEventListener("mouseout", function (event) {
+        event.target.style.fontSize = "20px";
+    });
+};
+originalSizeCalendarNumbers();
