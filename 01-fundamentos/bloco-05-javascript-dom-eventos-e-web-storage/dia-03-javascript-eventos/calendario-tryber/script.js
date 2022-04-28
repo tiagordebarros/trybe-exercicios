@@ -143,3 +143,16 @@ function myTasks(task) {
 
 }
 myTasks("Cozinhar");
+
+//Exercício 8
+
+function taskColor(color) {
+    const myTasksContainer = document.querySelector(".my-tasks");
+    const taskColorContainer = document.createElement("div");
+
+    taskColorContainer.className = "task";
+    taskColorContainer.style.backgroundColor = color;
+
+    myTasksContainer.appendChild(taskColorContainer);
+}
+taskColor("green");
