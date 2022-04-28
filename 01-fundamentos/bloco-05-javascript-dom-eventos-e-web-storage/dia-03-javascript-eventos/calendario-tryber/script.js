@@ -160,7 +160,7 @@ taskColor("green");
 //Exercício 9
 
 function taskSelected() {
-    taskColorContainer = document.querySelector("div.task");
+    const taskColorContainer = document.querySelector("div.task");
 
     taskColorContainer.addEventListener("click", function () {
         if (taskColorContainer.className === "task") {
@@ -172,17 +172,55 @@ function taskSelected() {
 };
 taskSelected();
 
-    //Solução alternativa
+//Solução alternativa
 
-    // function taskSelected() {
-    //     taskColorContainer = document.querySelector("div.task");
+// function taskSelected() {
+//    const taskColorContainer = document.querySelector("div.task");
+
+//     taskColorContainer.addEventListener("click", function (event) {
+//         if (event.target.className === "task") {
+//             event.target.className = "task selected";
+//         } else {
+//             event.target.className = "task";
+//         }
+//     });
+// };
+// taskSelected();
+
+//Exercício 10
+
+    //Somente atribui a cor
+
+function assignTaskColor() {
+    const taskColorContainer = document.querySelector("div.task");
+    const taskColor  = taskColorContainer.style.backgroundColor;
+    const dezDays = document.querySelector('#days');
+
+    dezDays.addEventListener("click", function (event) {
+        if (taskColorContainer.className === "task selected") {
+            event.target.style.color = taskColor;
+            event.target.style.fontWeight = "700";
+        }
+    });
+};
+assignTaskColor();
+
+// function setDayColor() {
+//     let selectedTask = document.getElementsByClassName('task selected');
+//     let days = document.querySelector('#days');
+//     let taskDiv = document.querySelector('.task');
+//     let taskColor = taskDiv.style.backgroundColor;
     
-    //     taskColorContainer.addEventListener("click", function (event) {
-    //         if (event.target.className === "task") {
-    //             event.target.className = "task selected";
-    //         } else {
-    //             event.target.className = "task";
-    //         }
-    //     });
-    // };
-    // taskSelected();
+//     days.addEventListener('click', function(event){
+//       let eventTargetColor = event.target.style.color;
+//       if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
+//         let color = selectedTask[0].style.backgroundColor;
+//         event.target.style.color = color;
+//       } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+//         event.target.style.color = 'rgb(119,119,119)';
+//       }
+//     });
+//   };
+  
+//   setDayColor();
+
