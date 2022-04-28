@@ -131,3 +131,15 @@ function originalSizeCalendarNumbers() {
     });
 };
 originalSizeCalendarNumbers();
+
+//Exercício 7
+
+function myTasks(task) {
+    const myTasksContainer = document.querySelector(".my-tasks");
+    const myTask = document.createElement("span");
+
+    myTask.innerHTML = task;
+    myTasksContainer.appendChild(myTask);
+
+}
+myTasks("Cozinhar");
