@@ -189,11 +189,11 @@ taskSelected();
 
 //Exercício 10
 
-    //Somente atribui a cor
+//Somente atribui a cor
 
 function assignTaskColor() {
     const taskColorContainer = document.querySelector("div.task");
-    const taskColor  = taskColorContainer.style.backgroundColor;
+    const taskColor = taskColorContainer.style.backgroundColor;
     const dezDays = document.querySelector('#days');
 
     dezDays.addEventListener("click", function (event) {
@@ -210,7 +210,7 @@ assignTaskColor();
 //     let days = document.querySelector('#days');
 //     let taskDiv = document.querySelector('.task');
 //     let taskColor = taskDiv.style.backgroundColor;
-    
+
 //     days.addEventListener('click', function(event){
 //       let eventTargetColor = event.target.style.color;
 //       if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
@@ -221,6 +221,36 @@ assignTaskColor();
 //       }
 //     });
 //   };
-  
+
 //   setDayColor();
 
+//Exercício Bônus
+
+function myAppointment() {
+    const appointmentField = document.querySelector("#task-input");
+    const addButton = document.getElementById("btn-add");
+    const myAppointmentContainer = document.querySelector(".task-list");
+
+    addButton.addEventListener("click", function () {
+        if (appointmentField.value.length > 0) {
+            const myAppointmentLists = document.createElement("li");
+            myAppointmentLists.innerText = appointmentField.value;
+            myAppointmentContainer.appendChild(myAppointmentLists);
+            appointmentField.value = "";
+        } else {
+            alert("Você não digitou nenhum compromisso!");
+        }
+    });
+
+    appointmentField.addEventListener("keyup", function (event) {
+        if (event.key === "Enter" && appointmentField.value.length > 0) {
+            const myAppointmentLists = document.createElement("li");
+            myAppointmentLists.innerText = appointmentField.value;
+            myAppointmentContainer.appendChild(myAppointmentLists);
+            appointmentField.value = "";
+        } else if (event.key === "Enter" && appointmentField.value.length === 0) {
+            alert("Você não digitou nenhum compromisso!");
+        }
+    });
+};
+myAppointment();
