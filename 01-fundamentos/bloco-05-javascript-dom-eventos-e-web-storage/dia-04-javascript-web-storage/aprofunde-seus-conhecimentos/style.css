@@ -8,6 +8,11 @@ body {
   color: white;
 }
 
+.alternative-text-color {
+  color: green;
+  font-weight: 700;
+}
+
 .navbar {
   background-color: white;
   position: fixed;
@@ -19,19 +24,20 @@ body {
 }
 
 .navbar span {
-    float: left;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 25px;
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
 }
 
 .main-content {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .material-symbols-outlined {
+  margin-right: -25px;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
