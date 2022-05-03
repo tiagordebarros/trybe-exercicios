@@ -4,6 +4,10 @@ body {
   text-align: justify;
 }
 
+p {
+  /* line-height: 1em; */
+}
+
 .dark-mode {
   background-color: black;
   color: white;
@@ -21,14 +25,14 @@ body {
   top: 0px;
   left: 0px;
   z-index: 999;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .navbar span {
   float: left;
   color: #000000;
   text-align: center;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
   text-decoration: none;
   font-size: 25px;
 }
@@ -46,6 +50,14 @@ body {
   'opsz' 48
 }
 
+.font-size-container {
+  display: inline-block;
+}
+
+.line-heigh-container {
+  display: inline-block;
+}
+
 #background-color:hover {
   cursor: pointer;
 }
@@ -60,6 +72,24 @@ body {
 
 #font-size-opt {
   cursor: pointer;
-  margin-left: 10px;
-  margin-top: 18px;  
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+#line-height {
+  margin-left: -30px;
+  margin-top: -10px;
+}
+
+#line-height-opt {
+  cursor: pointer;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 10px;
 }

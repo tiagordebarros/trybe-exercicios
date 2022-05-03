@@ -49,3 +49,26 @@ function changeFontSize() {
     });
 };
 changeFontSize();
+
+//Altera o espaçamento entre as linhas
+function changeLineHeight() {
+
+    let lineHeightOptIcon = document.querySelector("#line-height-opt");
+    lineHeightOptIcon.addEventListener("change", function () {
+        const p = document.querySelectorAll("p");
+        for (let index = 0; index < p.length; index += 1) {
+            if (lineHeightOptIcon.value === "1") {
+                p[index].style.lineHeight = "1em";
+            } else if (lineHeightOptIcon.value === "2") {
+                p[index].style.lineHeight = "2em";
+            } else if (lineHeightOptIcon.value === "3") {
+                p[index].style.lineHeight = "3em";
+            } else if (lineHeightOptIcon.value === "4") {
+                p[index].style.lineHeight = "4em";
+            } else if (lineHeightOptIcon.value === "5") {
+                p[index].style.lineHeight = "5em";
+            }
+        }
+    });
+};
+changeLineHeight();
