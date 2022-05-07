@@ -72,3 +72,22 @@ function changeLineHeight() {
     });
 };
 changeLineHeight();
+
+//Altera a família do texto
+function changeFontFamly() {
+
+    let fontFamilyOptIcon = document.querySelector("#font-family-opt");
+    fontFamilyOptIcon.addEventListener("change", function() {
+        const p = document.querySelectorAll("p");
+        for (let index = 0; index < p.length; index += 1) {
+            if (fontFamilyOptIcon.value === "arial") {
+                p[index].style.fontFamily = "Arial";
+            } else if (fontFamilyOptIcon.value === "verdana") {
+                p[index].style.fontFamily = "Verdana";
+            } else if (fontFamilyOptIcon.value === "times-new-roman") {
+                p[index].style.fontFamily = "Times New Roman";
+            }
+        }
+    });
+}
+changeFontFamly();

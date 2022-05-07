@@ -79,6 +79,7 @@ p {
 #line-height {
   margin-left: -30px;
   margin-top: -10px;
+  cursor: default;
 }
 
 #line-height-opt {
@@ -92,4 +93,16 @@ li {
   display: inline-block;
   margin-left: 30px;
   margin-top: 10px;
+}
+
+#font-family {
+  margin-left: -30px;
+  margin-top: -10px;
+  cursor: default;
+}
+
+#font-family-opt {
+  cursor: pointer;
+  margin-left: -10px;
+  margin-top: -10px;
 }
