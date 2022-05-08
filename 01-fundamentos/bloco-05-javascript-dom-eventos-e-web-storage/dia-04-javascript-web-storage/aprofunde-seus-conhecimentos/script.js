@@ -1,10 +1,17 @@
+//Leitor de Conteúdo v.0.1.0
+//Autor: Tiago Ribeiro de Barros
+
+//Define globalmente o local do armazenamento das preferências do usuário
+let storage = localStorage;
+
 //Ativa e desatica o dark mode
 function changeBackgroundColor() {
     const body = document.querySelector("body");
     const backgroundColorIcon = document.getElementById("background-color");
 
     backgroundColorIcon.addEventListener("click", function () {
-        body.classList.toggle("dark-mode");
+        let darkMode = body.classList.toggle("dark-mode");
+        storage.setItem("darkMode", JSON.stringify(darkMode));
     });
 };
 changeBackgroundColor();
@@ -16,7 +23,8 @@ function changeTextColor() {
         const textColorIcon = document.getElementById("text-color");
 
         textColorIcon.addEventListener("click", function () {
-            p[index].classList.toggle("alternative-text-color");
+            let alternativeColor = p[index].classList.toggle("alternative-text-color");
+            storage.setItem("textColor", JSON.stringify(alternativeColor));
         });
     }
 };
@@ -31,19 +39,40 @@ function changeFontSize() {
         const p = document.querySelectorAll("p");
         for (let index = 0; index < p.length; index += 1) {
             if (fontSizeOptIcon.value === "12") {
-                p[index].style.fontSize = "12px";
+                let selected12px = fontSizeOptIcon.value;
+                let font12 = p[index].style.fontSize = "12px";
+                storage.setItem("fontSize", JSON.stringify(font12));
+                storage.setItem("sizeSelected", JSON.stringify(selected12px));
             } else if (fontSizeOptIcon.value === "14") {
-                p[index].style.fontSize = "14px";
+                let selected14px = fontSizeOptIcon.value;
+                let font14 = p[index].style.fontSize = "14px";
+                storage.setItem("fontSize", JSON.stringify(font14));
+                storage.setItem("sizeSelected", JSON.stringify(selected14px));
             } else if (fontSizeOptIcon.value === "16") {
-                p[index].style.fontSize = "16px";
+                let selected16px = fontSizeOptIcon.value;
+                let font16 = p[index].style.fontSize = "16px";
+                storage.setItem("fontSize", JSON.stringify(font16));
+                storage.setItem("sizeSelected", JSON.stringify(selected16px));
             } else if (fontSizeOptIcon.value === "18") {
-                p[index].style.fontSize = "18px";
+                let selected18px = fontSizeOptIcon.value;
+                let font18 = p[index].style.fontSize = "18px";
+                storage.setItem("fontSize", JSON.stringify(font18));
+                storage.setItem("sizeSelected", JSON.stringify(selected18px));
             } else if (fontSizeOptIcon.value === "20") {
-                p[index].style.fontSize = "20px";
+                let selected20px = fontSizeOptIcon.value;
+                let font20 = p[index].style.fontSize = "20px";
+                storage.setItem("fontSize", JSON.stringify(font20));
+                storage.setItem("sizeSelected", JSON.stringify(selected20px));
             } else if (fontSizeOptIcon.value === "24") {
-                p[index].style.fontSize = "24px";
+                let selected24px = fontSizeOptIcon.value;
+                let font24 = p[index].style.fontSize = "24px";
+                storage.setItem("fontSize", JSON.stringify(font24));
+                storage.setItem("sizeSelected", JSON.stringify(selected24px));
             } else if (fontSizeOptIcon.value === "26") {
-                p[index].style.fontSize = "26px";
+                let selected26px = fontSizeOptIcon.value;
+                let font26 = p[index].style.fontSize = "26px";
+                storage.setItem("fontSize", JSON.stringify(font26));
+                storage.setItem("sizeSelected", JSON.stringify(selected26px));
             }
         }
     });
@@ -58,15 +87,30 @@ function changeLineHeight() {
         const p = document.querySelectorAll("p");
         for (let index = 0; index < p.length; index += 1) {
             if (lineHeightOptIcon.value === "1") {
-                p[index].style.lineHeight = "1em";
+                let selected1em = lineHeightOptIcon.value;
+                let lineHeight1em = p[index].style.lineHeight = "1em";
+                storage.setItem("lineHeight", JSON.stringify(lineHeight1em));
+                storage.setItem("heightSelected", JSON.stringify(selected1em));
             } else if (lineHeightOptIcon.value === "2") {
-                p[index].style.lineHeight = "2em";
+                let selected2em = lineHeightOptIcon.value;
+                let lineHeight2em = p[index].style.lineHeight = "2em";
+                storage.setItem("lineHeight", JSON.stringify(lineHeight2em));
+                storage.setItem("heightSelected", JSON.stringify(selected2em));
             } else if (lineHeightOptIcon.value === "3") {
-                p[index].style.lineHeight = "3em";
+                let selected3em = lineHeightOptIcon.value;
+                let lineHeight3em = p[index].style.lineHeight = "3em";
+                storage.setItem("lineHeight", JSON.stringify(lineHeight3em));
+                storage.setItem("heightSelected", JSON.stringify(selected3em));
             } else if (lineHeightOptIcon.value === "4") {
-                p[index].style.lineHeight = "4em";
+                let selected4em = lineHeightOptIcon.value;
+                let lineHeight4em = p[index].style.lineHeight = "4em";
+                storage.setItem("lineHeight", JSON.stringify(lineHeight4em));
+                storage.setItem("heightSelected", JSON.stringify(selected4em));
             } else if (lineHeightOptIcon.value === "5") {
-                p[index].style.lineHeight = "5em";
+                let selected5em = lineHeightOptIcon.value;
+                let lineHeight5em = p[index].style.lineHeight = "5em";
+                storage.setItem("lineHeight", JSON.stringify(lineHeight5em));
+                storage.setItem("heightSelected", JSON.stringify(selected5em));
             }
         }
     });
@@ -77,17 +121,99 @@ changeLineHeight();
 function changeFontFamly() {
 
     let fontFamilyOptIcon = document.querySelector("#font-family-opt");
-    fontFamilyOptIcon.addEventListener("change", function() {
+    fontFamilyOptIcon.addEventListener("change", function () {
         const p = document.querySelectorAll("p");
         for (let index = 0; index < p.length; index += 1) {
             if (fontFamilyOptIcon.value === "arial") {
-                p[index].style.fontFamily = "Arial";
+                let selectedArial = fontFamilyOptIcon.value;
+                let fontArial = p[index].style.fontFamily = "Arial";
+                storage.setItem('fontFamily', JSON.stringify(fontArial));
+                storage.setItem('fontSelected', JSON.stringify(selectedArial));
             } else if (fontFamilyOptIcon.value === "verdana") {
-                p[index].style.fontFamily = "Verdana";
+                let selectedVerdana = fontFamilyOptIcon.value;
+                let fontVerdana = p[index].style.fontFamily = "Verdana";
+                storage.setItem('fontFamily', JSON.stringify(fontVerdana));
+                storage.setItem('fontSelected', JSON.stringify(selectedVerdana));
             } else if (fontFamilyOptIcon.value === "times-new-roman") {
-                p[index].style.fontFamily = "Times New Roman";
+                let selectedTimesNewRoman = fontFamilyOptIcon.value;
+                let fontTimesNewRoman = p[index].style.fontFamily = "Times New Roman";
+                storage.setItem('fontFamily', JSON.stringify(fontTimesNewRoman));
+                storage.setItem('fontSelected', JSON.stringify(selectedTimesNewRoman));
             }
         }
     });
 }
 changeFontFamly();
+
+//Chama as funções que armazenam as preferências do usuário salvas no local storage após o carregamento completo da página
+window.onload = () => {
+    // alert("Inicializou");
+    darkModeLocalStorage();
+    alternativeTextColorLocalStorage();
+    fontSizeLocalStorage();
+    lineHeightLocalStorage();
+    fontFamilyLocalStorage();
+}
+
+//Busca a informação do darkmode ligado ou desligado no local storage
+function darkModeLocalStorage() {
+    let darkMode = JSON.parse(localStorage.getItem("darkMode"));
+    let body = document.querySelector("body");
+    if (darkMode === true) {
+        body.classList.toggle("dark-mode");
+    }
+}
+
+//Busca a informação da cor alternativa do texto no local storage
+function alternativeTextColorLocalStorage() {
+    let textColor = JSON.parse(localStorage.getItem("textColor"));
+    let p = document.querySelectorAll("p");
+
+    for (let index = 0; index < p.length; index += 1) {
+        if (textColor === true) {
+            p[index].classList.toggle("alternative-text-color");
+        }
+    }
+}
+
+//Busca a informação do tamanho da fonte no local storage
+function fontSizeLocalStorage() {
+    let fontSizeOptIcon = document.querySelector("#font-size-opt");
+    let sizeSelected = JSON.parse(localStorage.getItem("sizeSelected"));
+    fontSizeOptIcon.value = sizeSelected;
+
+    let fontSize = JSON.parse(localStorage.getItem("fontSize"));
+    let p = document.querySelectorAll("p");
+
+    for (let index = 0; index < p.length; index += 1) {
+        p[index].style.fontSize = fontSize;
+    }
+}
+
+//Busca a informação do espaçamento entre linhas no local storage
+function lineHeightLocalStorage() {
+    let lineHeightOptIcon = document.querySelector("#line-height-opt");
+    let heightSelected = JSON.parse(localStorage.getItem("heightSelected"));
+    lineHeightOptIcon.value = heightSelected;
+
+    let lineHeight = JSON.parse(localStorage.getItem("lineHeight"));
+    let p = document.querySelectorAll("p");
+
+    for (let index = 0; index < p.length; index += 1) {
+        p[index].style.lineHeight = lineHeight;
+    }
+}
+
+//Busca a informação da famíla da fonte no local storage
+function fontFamilyLocalStorage() {
+    let fontFamilyOptIcon = document.querySelector("#font-family-opt");
+    let fontSelected = JSON.parse(localStorage.getItem("fontSelected"));
+    fontFamilyOptIcon.value = fontSelected;
+
+    let font = JSON.parse(localStorage.getItem("fontFamily"));
+    let p = document.querySelectorAll("p");
+
+    for (let index = 0; index < p.length; index += 1) {
+        p[index].style.fontFamily = font;
+    }
+}
