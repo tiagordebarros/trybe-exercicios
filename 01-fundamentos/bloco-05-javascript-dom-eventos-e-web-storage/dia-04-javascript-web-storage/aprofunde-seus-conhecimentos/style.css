@@ -1,0 +1,110 @@
+body {
+  background-color: white;
+  color: black;
+  text-align: justify;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.alternative-text-color {
+  color: green;
+  font-weight: 700;
+}
+
+.navbar {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  /* overflow: hidden; */
+}
+
+.navbar span {
+  float: left;
+  color: #000000;
+  text-align: center;
+  /* padding: 14px 16px; */
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.main-content {
+  margin-top: 50px;
+}
+
+.material-symbols-outlined {
+  margin-right: -25px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.font-size-container {
+  display: inline-block;
+}
+
+.line-heigh-container {
+  display: inline-block;
+}
+
+#background-color:hover {
+  cursor: pointer;
+}
+
+#text-color:hover {
+  cursor: pointer;
+}
+
+#font-size:hover {
+  cursor: default;
+}
+
+#font-size-opt {
+  cursor: pointer;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+#line-height {
+  margin-left: -30px;
+  margin-top: -10px;
+  cursor: default;
+}
+
+#line-height-opt {
+  cursor: pointer;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+#font-family {
+  margin-left: -30px;
+  margin-top: -10px;
+  cursor: default;
+}
+
+#font-family-opt {
+  cursor: pointer;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+#print {
+  cursor: pointer;
+  margin-left: -30px;
+  margin-top: -10px;
+}
