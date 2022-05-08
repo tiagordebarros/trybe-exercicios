@@ -4,10 +4,6 @@ body {
   text-align: justify;
 }
 
-p {
-  /* line-height: 1em; */
-}
-
 .dark-mode {
   background-color: black;
   color: white;
@@ -104,5 +100,11 @@ li {
 #font-family-opt {
   cursor: pointer;
   margin-left: -10px;
+  margin-top: -10px;
+}
+
+#print {
+  cursor: pointer;
+  margin-left: -30px;
   margin-top: -10px;
 }

@@ -145,6 +145,15 @@ function changeFontFamly() {
 }
 changeFontFamly();
 
+function printText() {
+    let header = document.querySelector("header");
+    header.style.display = "none";
+    window.print();
+    header.style.display = "unset";
+}
+let printer = document.getElementById("print");
+printer.addEventListener("click", printText);
+
 //Chama as funções que armazenam as preferências do usuário salvas no local storage após o carregamento completo da página
 window.onload = () => {
     // alert("Inicializou");
