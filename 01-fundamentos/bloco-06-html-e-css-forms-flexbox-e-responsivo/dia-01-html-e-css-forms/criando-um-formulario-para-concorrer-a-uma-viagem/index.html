@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> TrybeTrip</title>
+</head>
+<body>
+    <header>
+        <h1>Concurso TrybeTrip e Você! - Participe!</h1>
+    </header>
+    <main>
+        <form action="" method="get">
+
+            <div class="basicInformationName">
+                <label for="fullName">Nome:
+                    <input type="text" name="fullName" id="fullName" autofocus required>
+                </label>
+            </div>
+
+            <div class="basicInformationEmail">
+                <label for="email">E-mail:
+                    <input type="email" name="email" id="email" required>
+                </label>
+            </div>
+
+            <div class="favouredDestinationTravel">
+                <p>Destino Preferido:</p>
+                <label for="destination1">
+                    <input type="radio" name="favouredDestination" id="destination1">Cidade
+                </label>
+                <label for="destination2">
+                    <input type="radio" name="favouredDestination" id="destination2">Campo
+                </label>
+                <label for="destination3">
+                    <input type="radio" name="favouredDestination" id="destination3">Praia
+                </label>
+                <label for="destination4">
+                    <input type="radio" name="favouredDestination" id="destination4">Montanhas
+                </label>
+            </div>
+
+            <div class="contestResponseTrip">
+                <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+                <textarea name="contestResponse" id="contestResponse" cols="30" rows="10" maxlength="500" placeholder="Digite aqui a sua resposta" required></textarea>
+            </div>
+
+            <div class="tripDate">
+                <p>Qual a melhor data para realizar sua viagem?</p>
+                <input type="date" name="date" id="date">
+            </div>
+            
+            <div class="offer">
+                <label for="tripeOffer">
+                    <input type="checkbox" name="tripeOffer" id="tripeOffer">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                </label>
+            </div>
+            
+            
+            <div class="agreement">
+                <label for="trpeAgreement">
+                    <input type="checkbox" name="trpeAgreement" id="trpeAgreement">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                </label>
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
