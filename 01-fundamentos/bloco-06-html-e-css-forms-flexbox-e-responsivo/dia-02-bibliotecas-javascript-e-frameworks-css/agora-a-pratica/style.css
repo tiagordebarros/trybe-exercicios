@@ -1,0 +1,14 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form {
+  border: solid 3px #00C4A9;
+  padding: 10px;
+}
+
+header h1 {
+  text-align: center;
+  color: #00C4A9;
+  padding: 100px;
+}
