@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+    <title> TrybeTrip</title>
+</head>
+<body>
+    <header>
+        <h1 class="title is-1">Concurso TrybeTrip e Você! - Participe!</h1>
+    </header>
+    <main>
+        <form action="" method="get" id="tripForm">
+
+            <div class="field basicInformationName">
+                <label for="fullName" class="label">Nome:
+                    <input class="input is-primary autofocus" type="text" name="fullName" id="fullName" autofocus required>
+                </label>
+            </div>
+
+            <div class="field basicInformationEmail">
+                <label for="email" class="label">E-mail:
+                    <input class="input is-primary" type="email" name="email" id="email" required>
+                </label>
+            </div>
+
+            <div class="control favouredDestinationTravel">
+                <p class="title is-4 is-spaced">Destino Preferido:</p>
+
+                <label for="destination1" class="radio">
+                    <input type="radio" name="favouredDestination" id="destination1" checked>Cidade
+                </label>
+                <label for="destination2" class="radio">
+                    <input type="radio" name="favouredDestination" id="destination2">Campo
+                </label>
+                <label for="destination3" class="radio">
+                    <input type="radio" name="favouredDestination" id="destination3">Praia
+                </label>
+                <label for="destination4" class="radio">
+                    <input type="radio" name="favouredDestination" id="destination4">Montanhas
+                </label>
+            </div>
+
+            <div class="control contestResponseTrip">
+                <p class="title is-4 is-spaced">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+                <textarea class="textarea is-primary" name="contestResponse" id="contestResponse" cols="30" rows="10" maxlength="500" placeholder="Digite aqui a sua resposta" required></textarea>
+            </div>
+
+            <div class="control tripDate">
+                <p class="title is-4 is-spaced">Qual a melhor data para realizar sua viagem?</p>
+                <input type="date" name="date" id="date">
+            </div>
+            
+            <div class="control offer">
+                <label for="tripeOffer" class="checkbox">
+                    <input class="checkbox" type="checkbox" name="tripeOffer" id="tripeOffer">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                </label>
+            </div>
+            
+            
+            <div class="control agreement">
+                <label for="trpeAgreement" class="checkbox">
+                    <input class="checkbox" type="checkbox" name="trpeAgreement" id="trpeAgreement" required>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                </label>
+            </div>
+
+            <button class="button is-primary" type="submit" id="submit">Enviar</button>
+            <button class="button is-warning" id="clear">Apagar</button>
+
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
