@@ -30,6 +30,10 @@ html {
   cursor: pointer;
 }
 
+#myLinksLarge {
+  display: none;
+}
+
 .fa-bars {
  padding-right: 30px;
  cursor: pointer;
@@ -147,7 +151,7 @@ footer p {
   padding: 0px 20px;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 715px) {
   body {
     margin: 0px;
   }
@@ -187,4 +191,33 @@ footer p {
     font-size: large;
   }
 
+  #myLinksLarge {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .mainTitle {
+    font-size: x-large;
+  }
+
+  #hamburguerMenu {
+    display: none;
+  }
+
+  #myLinksLarge {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0px 50px;
+  }
+
+  #myLinksLarge li {
+    padding: 5px 20px;
+    border: solid 1px white;
+    cursor: pointer;
+  }
 }
