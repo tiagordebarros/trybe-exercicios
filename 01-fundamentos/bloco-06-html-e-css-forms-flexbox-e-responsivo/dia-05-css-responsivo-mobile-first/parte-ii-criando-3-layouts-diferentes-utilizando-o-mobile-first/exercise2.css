@@ -58,6 +58,10 @@ hr {
   background-color: brown;
 }
 
+.chapterImage {
+ display: none;
+}
+
 .main-content p {
   text-align: justify;
   font-size: large;
@@ -141,4 +145,46 @@ footer p {
   line-height: 20px;
   text-align: justify;
   padding: 0px 20px;
+}
+
+@media screen and (min-width: 750px) {
+  body {
+    margin: 0px;
+  }
+
+  a i.fa-info-circle {
+    font-size: 100px;
+    color: brown;
+  }
+
+  .chapterImage {
+    display: unset;
+   }
+  
+  .chapterImage img {
+    width: 300px;
+  }
+
+  .chapterImage figcaption {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+  }
+
+  .chapterIndex {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 100px;
+  }
+
+  .aside-one {
+    padding-bottom: 50px;
+  }
+
+  .infoBase {
+    font-size: large;
+  }
+
 }
