@@ -95,3 +95,45 @@ body {
         break-inside: avoid;
       }
   }
+
+  @media screen and (max-width: 700px) {
+      #aside {
+        display: none;
+      }
+
+      body {
+        padding: 0px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      #navigation {
+        margin-top: 75px;
+      }
+
+      #navigation ul {
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: stretch;
+        width: 100%;
+      }
+
+      #navigation li{
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: stretch;
+        width: 100%;
+      }
+
+      #header {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 35px;
+      }
+
+  }
+  
