@@ -68,7 +68,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 6-3: _CSS Flexbox - Parte 1_
 - [x] 6-4: _CSS Flexbox - Parte 2_
 - [x] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _[Projeto - Página inicial do Facebook]()_
+- [x] 6-6: _[Projeto - Trybewarts](https://tiagordebarros.github.io/projetos/trybewarts/index.html)_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
