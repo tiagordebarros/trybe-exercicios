@@ -67,7 +67,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
 - [x] 6-3: _CSS Flexbox - Parte 1_
 - [x] 6-4: _CSS Flexbox - Parte 2_
-- [ ] 6-5: _CSS Responsivo - Mobile First_
+- [x] 6-5: _CSS Responsivo - Mobile First_
 - [ ] 6-6: _[Projeto - Página inicial do Facebook]()_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários

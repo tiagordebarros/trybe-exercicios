@@ -1,0 +1,223 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#myLinks {
+  display: none;
+  color: white;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 75px;
+  padding: 1px 0;
+}
+
+#myLinks li {
+  padding: 10px 0px;
+  list-style: none;
+  text-align: center;
+}
+
+#myLinks li:hover {
+  background-color: grey;
+  color: black;
+  width: 100%;
+  cursor: pointer;
+}
+
+#myLinksLarge {
+  display: none;
+}
+
+.fa-bars {
+ padding-right: 30px;
+ cursor: pointer;
+}
+
+.mainTitle {
+  font-size: large;
+  padding-left: 40px;
+}
+
+body {
+  margin: 0px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h2 {
+  font-size: xx-large;
+}
+
+hr {
+  width: 25%;
+  height: 3px;
+  background-color: brown;
+}
+
+.chapterImage {
+ display: none;
+}
+
+.main-content p {
+  text-align: justify;
+  font-size: large;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 30px;
+  padding: 10px 15px;
+
+}
+
+.main-navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: brown;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.aside-one {
+  margin-top: 100px;
+}
+
+.aside-one ul {
+  list-style: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  padding: 0px 40px;
+}
+
+.aside-one ul a li {
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.aside-two {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  border: solid 3px burlywood;
+  border-radius: 20px;
+  background-color: burlywood;
+  margin: 10px;
+  line-height: 25px;
+}
+
+.aside-two ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.aside-two a {
+  text-decoration: none;
+}
+
+a i.fa-info-circle {
+  font-size: 50px;
+  color: brown;
+}
+
+footer h3 {
+ background-color: black;
+ color: white;
+ padding: 20px;
+ text-align: center;
+}
+
+footer p {
+  font-size: small;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: justify;
+  padding: 0px 20px;
+}
+
+@media screen and (min-width: 715px) {
+  body {
+    margin: 0px;
+  }
+
+  a i.fa-info-circle {
+    font-size: 100px;
+    color: brown;
+  }
+
+  .chapterImage {
+    display: unset;
+   }
+  
+  .chapterImage img {
+    width: 300px;
+  }
+
+  .chapterImage figcaption {
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+  }
+
+  .chapterIndex {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 100px;
+  }
+
+  .aside-one {
+    padding-bottom: 50px;
+  }
+
+  .infoBase {
+    font-size: large;
+  }
+
+  #myLinksLarge {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .mainTitle {
+    font-size: x-large;
+  }
+
+  #hamburguerMenu {
+    display: none;
+  }
+
+  #myLinksLarge {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 0px 50px;
+  }
+
+  #myLinksLarge li {
+    padding: 5px 20px;
+    border: solid 1px white;
+    cursor: pointer;
+  }
+}
