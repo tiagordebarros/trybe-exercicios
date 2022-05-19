@@ -61,7 +61,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [ ] 5-7: _[(Bônus) Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[(Bônus) Projeto - Carta Misteriosa]()_
 
-##### Bloco 6: HTML & CSS avançado
+##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo
 
 - [x] 6-1: _HTML & CSS - Forms_
 - [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
@@ -70,9 +70,9 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 6-5: _CSS Responsivo - Mobile First_
 - [x] 6-6: _[Projeto - Trybewarts](https://tiagordebarros.github.io/projetos/trybewarts/index.html)_
 
-##### Bloco 7: JavaScript ES6 & Testes Unitários
+##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários
 
-- [ ] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
+- [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [ ] 7-2: _JavaScript ES6 - Objects_
 - [ ] 7-3: _Testes unitários em JavaScript_
 - [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_
