@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Calculadora</title>
+</head>
+<body>
+  <p>Informe dois números para realizar a soma:</p>
+  <label for='value1'>Valor 1:</label>
+  <input type='text' id='value1'>
+  <label for='value2'>Valor 2:</label>
+  <input type='text' id='value2'>
+  <button id='button'>Somar</button>
+  <p id='result'></p>
+  <script>
+    const sumVerificationEmptyFields = () => {
+      const value1 = document.getElementById('value1').value;
+      const value2 = document.getElementById('value2').value;
+      const sumResult = document.getElementById('result');
+      if (value1.length === 0 || value2.length === 0) {
+        sumResult.innerHTML = `Erro: Você deve preencher os dois campos.`;
+        throw new Error('Você deve preencher os dois campos.');
+      }
+    };
+
+    const numberVerification = () =>{
+      const value1 = document.getElementById('value1').value;
+      const value2 = document.getElementById('value2').value;
+      const sumResult = document.getElementById('result');
+      if (isNaN(value1 || value2)) {
+        sumResult.innerHTML = `Erro: Por favor, preencha os campos somente com números.`;
+        throw new Error('O valor informado deve ser numérico.');
+      }
+    };
+
+    const sum = () => {
+      const value1 = document.getElementById('value1').value;
+      const value2 = document.getElementById('value2').value;
+      const result = parseInt(value1) + parseInt(value2);
+      const sumResult = document.getElementById('result');
+      try {
+        sumVerificationEmptyFields();
+        numberVerification();
+        sumResult.innerHTML = `Resultado: ${result}`
+      } catch(error) {
+        return error.message;
+      } finally {
+        document.getElementById('value1').value = '';
+        document.getElementById('value2').value = '';
+      }
+    };
+
+    window.onload = () => {
+      const button = document.getElementById('button');
+      button.addEventListener('click', sum);
+    }
+  </script>
+</body>
+</html>
