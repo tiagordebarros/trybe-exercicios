@@ -75,7 +75,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [x] 7-2: _JavaScript ES6 - Fluxo de exceção e Objetos_
 - [x] 7-3: _Primeiros passos em Jest_
-- [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+- [x] 7-4: _[Projeto - JavaScript Testes Unitários](https://tiagordebarros.github.io/projetos/javascript-testes-unitarios/index.html))_
 
 ##### Bloco 8: JavaScript ES6
 
