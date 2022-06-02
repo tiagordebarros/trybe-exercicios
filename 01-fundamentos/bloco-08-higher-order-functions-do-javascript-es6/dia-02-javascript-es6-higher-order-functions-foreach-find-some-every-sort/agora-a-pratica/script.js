@@ -71,3 +71,6 @@ const smallerName = () => {
     return orderBooks[0];
 };
 console.log(smallerName());
+
+const getNamedBook = () => books.find((book) => book.name.length === 26);
+console.log(getNamedBook());
