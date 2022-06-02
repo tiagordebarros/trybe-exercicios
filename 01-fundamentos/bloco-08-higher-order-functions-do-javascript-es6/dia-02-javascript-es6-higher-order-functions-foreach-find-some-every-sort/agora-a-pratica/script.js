@@ -77,3 +77,6 @@ console.log(getNamedBook());
 
 const booksOrderedByReleaseYearDesc = () => books.sort((a, b) => b.releaseYear - a.releaseYear);
 console.log(booksOrderedByReleaseYearDesc());
+
+const everyoneWasBornOnSecXX = () => books.every((book) => book.author.birthYear >= 1901 && book.author.birthYear < 2001);
+console.log(everyoneWasBornOnSecXX());
