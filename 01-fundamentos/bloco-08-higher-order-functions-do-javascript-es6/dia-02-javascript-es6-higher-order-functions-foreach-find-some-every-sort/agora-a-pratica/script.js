@@ -74,3 +74,6 @@ console.log(smallerName());
 
 const getNamedBook = () => books.find((book) => book.name.length === 26);
 console.log(getNamedBook());
+
+const booksOrderedByReleaseYearDesc = () => books.sort((a, b) => b.releaseYear - a.releaseYear);
+console.log(booksOrderedByReleaseYearDesc());
