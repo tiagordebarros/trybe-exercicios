@@ -80,3 +80,6 @@ console.log(booksOrderedByReleaseYearDesc());
 
 const everyoneWasBornOnSecXX = () => books.every((book) => book.author.birthYear >= 1901 && book.author.birthYear < 2001);
 console.log(everyoneWasBornOnSecXX());
+
+const someBookWasReleaseOnThe80s = () => books.some((book) => book.releaseYear > 1979 && book.releaseYear < 1990);
+console.log(someBookWasReleaseOnThe80s());
