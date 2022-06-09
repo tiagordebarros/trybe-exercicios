@@ -20,7 +20,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - Soft Skills :heart:
 - Metodologias ágeis :airplane:
 
-## Fundamentos do Desenvolvimento Web :white_check_mark:
+## Fundamentos do Desenvolvimento Web :heavy_check_mark:
 
 ##### Bloco 1: Introdução - Unix & Shell
 
@@ -80,26 +80,25 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 ##### Bloco 8: Higher Order Functions do JavaScript ES6
 
 - [x] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions_
-
 - [x] 8-2: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 - [x] 8-3: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [x] 8-4: _JavaScript ES6 - Higher Order Functions - reduce_
 - [x] 8-5: _JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais_
-- [ ] 8-6: _[Projeto - Zoo functions]()_
+- [x] 8-6: _[Projeto - Zoo functions](https://tiagordebarros.github.io/projetos/zoo-functions/index.html)_
 
-##### Bloco 9: Assincronicidade & Callbacks
+##Desenvolvimento Front-end :white_check_mark:
+
+##### Bloco 9 - JavaScript e Testes Assíncronos
 
 - [ ] 9-1: _JavaScript Assíncrono e Callbacks_
-- [ ] 9-2: _JavaScript Promises_
-- [ ] 9-3: _[Projeto - Carrinho de Compras]()_
+- [ ] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
+- [ ] 9-3: _Jest - Testes Assíncronos_
+- [ ] 9-4: _[Projeto - Carrinho de Compras]()_
 
-##### Bloco 10: Jest
+##### Bloco 10 - Introdução à React
 
-- [ ] 10-1: _Primeiros passos no Jest_
-- [ ] 10-2: _Jest - Testes Assíncronos_
-- [ ] 10-3: _Jest - Simulando comportamentos_
-- [ ] 10-4: _[Projeto - Jest Assí­ncrono e Mocking]()_
-
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+- [ ] 10-1: _'Hello, world!' no React!_
+- [ ] 10-2: _Componentes React_
+- [ ] 10-3: _[Projeto - Sistema Solar]()_
 
 # [...em breve]
