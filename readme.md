@@ -86,11 +86,11 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 8-5: _JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais_
 - [x] 8-6: _[Projeto - Zoo functions](https://tiagordebarros.github.io/projetos/zoo-functions/index.html)_
 
-##Desenvolvimento Front-end :white_check_mark:
+## Desenvolvimento Front-end :white_check_mark:
 
 ##### Bloco 9 - JavaScript e Testes Assíncronos
 
-- [ ] 9-1: _JavaScript Assíncrono e Callbacks_
+- [x] 9-1: _JavaScript Assíncrono e Callbacks_
 - [ ] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
 - [ ] 9-3: _Jest - Testes Assíncronos_
 - [ ] 9-4: _[Projeto - Carrinho de Compras]()_
