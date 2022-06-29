@@ -91,7 +91,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 ##### Bloco 9 - JavaScript e Testes Assíncronos
 
 - [x] 9-1: _JavaScript Assíncrono e Callbacks_
-- [ ] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
+- [x] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
 - [ ] 9-3: _Jest - Testes Assíncronos_
 - [ ] 9-4: _[Projeto - Carrinho de Compras]()_
 
