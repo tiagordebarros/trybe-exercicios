@@ -99,6 +99,6 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 
 - [x] 10-1: _'Hello, world!' no React!_
 - [x] 10-2: _Componentes React_
-- [ ] 10-3: _[Projeto - Sistema Solar]()_
+- [x] 10-3: _[Projeto - Sistema Solar](https://tiagordebarros.github.io/projetos/solar-system/index.html)_
 
 # [...em breve]
