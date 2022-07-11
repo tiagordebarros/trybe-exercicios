@@ -10,9 +10,9 @@ class App extends Component {
     this.handleClickThree = this.handleClickThree.bind(this)
 
     this.state={
-      clicksCounterOne: 0,
-      clicksCounterTwo: 0,
-      clicksCounterThree: 0,
+      clicksCounterOne: 1,
+      clicksCounterTwo: 1,
+      clicksCounterThree: 1,
     }
   }
 
@@ -34,9 +34,10 @@ class App extends Component {
     })
   )}
   render(){
-    console.log(this);
+    const {clicksCounterOne, clicksCounterTwo, clicksCounterThree} = this.state;
     return (
       <div className="App">
+        {(clicksCounterOne % 2 === 0 || clicksCounterTwo % 2 === 0 || clicksCounterThree % 2 === 0) ? console.log('Verde') : console.log('Azul')}
         <button onClick={this.handleClickOne}>{this.state.clicksCounterOne}</button>
         <button onClick={this.handleClickTwo}>{this.state.clicksCounterTwo}</button>
         <button onClick={this.handleClickThree}>{this.state.clicksCounterThree}</button>
