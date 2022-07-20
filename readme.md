@@ -101,4 +101,10 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 10-2: _Componentes React_
 - [x] 10-3: _[Projeto - Sistema Solar](https://tiagordebarros.github.io/projetos/solar-system/index.html)_
 
+##### Bloco 11 - Componentes com Estado, Eventos e Formulários com React
+
+- [x] 11-1: _Componentes com estado e eventos_
+- [ ] 11-2: _Formulários no React_
+- [ ] 11-3: _[Projeto - Tryunfo](https://tiagordebarros.github.io/projetos/tryunfo/index.html)_
+
 # [...em breve]
