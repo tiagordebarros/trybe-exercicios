@@ -5,13 +5,19 @@ class Form extends Component{
         super(props);
         this.state={
             nationality: 'Brasileiro',
+            fullname: '',
+            age: 0,
+            about: null,
+            accept: false,
         }
     }
 
     handleChange = ({ target }) => {
-      const { value } = target;
+      const { name, checked, type } = target;
+    //   console.log(checked);
+      const value = type === 'checkbox' ? checked : target.value;
       this.setState({
-        nationality: value,
+        [name]: value,
       });
     }
 
@@ -29,11 +35,13 @@ class Form extends Component{
                     </select>
                 </label>
 
+                <fieldset>
                 <label htmlFor="fullname">Nome Completo
                     <input
                     name="fullname"
                     id="fullname"
                     type="text"
+                    onChange={this.handleChange}
                     />
                 </label>
 
@@ -42,11 +50,21 @@ class Form extends Component{
                     id="age"
                     name="age"
                     type="number"
+                    onChange={this.handleChange}
                     />
                 </label>
 
                 <label htmlFor="about">Sobre mim
-                    <textarea name="about" id="about" cols="30" rows="10"></textarea>
+                    <textarea name="about" id="about" cols="30" rows="10" onChange={this.handleChange}></textarea>
+                </label>
+                </fieldset>
+
+                <label htmlFor="docs">Anexar documentação
+                    <input type="file" name="docs" id="docs" />
+                </label>
+
+                <label htmlFor="accept">Li e concordo com os termos de uso
+                    <input type="checkbox" name="accept" id="accept" onChange={this.handleChange}/>
                 </label>
 
             </form>
