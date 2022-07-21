@@ -1,4 +1,6 @@
 import { Component } from "react";
+import PersonalInfo from "./PersonalInfo";
+import Documentation from "./Documentation";
 
 class Form extends Component{
     constructor(props){
@@ -7,21 +9,37 @@ class Form extends Component{
             nationality: 'Brasileiro',
             fullname: '',
             age: 0,
-            about: null,
+            about: '',
             accept: false,
+            formularioComErros: true,
         }
+    }
+
+    handleError = () => {
+        const {fullname, age, about, accept } = this.state;
+        const errorCases = [
+            !fullname.length,
+            !age > 0,
+            !about.length,
+            !accept === true,
+        ];
+        const compiledForm = errorCases.every((errorCase) => errorCase !== true);
+        this.setState({
+            formularioComErros: !compiledForm,
+        });
     }
 
     handleChange = ({ target }) => {
       const { name, checked, type } = target;
-    //   console.log(checked);
       const value = type === 'checkbox' ? checked : target.value;
       this.setState({
         [name]: value,
-      });
+      },
+      () => this.handleError());
     }
 
     render(){
+        const { fullname, age, about, accept } = this.state;
         return(
             <div>
                 <h1>Informações Pessoais</h1>
@@ -35,37 +53,19 @@ class Form extends Component{
                     </select>
                 </label>
 
-                <fieldset>
-                <label htmlFor="fullname">Nome Completo
-                    <input
-                    name="fullname"
-                    id="fullname"
-                    type="text"
-                    onChange={this.handleChange}
-                    />
-                </label>
+                <PersonalInfo
+                    fullname={this.handleChange}
+                    age={this.handleChange}
+                    about={this.handleChange}
+                    fullnameValue={fullname}
+                    ageValue={age}
+                    aboutValue={about}
+                />
 
-                <label htmlFor="age">Idade
-                    <input 
-                    id="age"
-                    name="age"
-                    type="number"
-                    onChange={this.handleChange}
-                    />
-                </label>
-
-                <label htmlFor="about">Sobre mim
-                    <textarea name="about" id="about" cols="30" rows="10" onChange={this.handleChange}></textarea>
-                </label>
-                </fieldset>
-
-                <label htmlFor="docs">Anexar documentação
-                    <input type="file" name="docs" id="docs" />
-                </label>
-
-                <label htmlFor="accept">Li e concordo com os termos de uso
-                    <input type="checkbox" name="accept" id="accept" onChange={this.handleChange}/>
-                </label>
+                <Documentation
+                    accept={this.handleChange} 
+                    acceptChecked={accept}
+                />
 
             </form>
             </div>
