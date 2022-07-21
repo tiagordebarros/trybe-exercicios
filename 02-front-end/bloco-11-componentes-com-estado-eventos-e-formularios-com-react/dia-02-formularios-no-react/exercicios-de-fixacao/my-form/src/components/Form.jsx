@@ -39,7 +39,7 @@ class Form extends Component{
     }
 
     render(){
-        const { fullname, age, about, accept } = this.state;
+        const { fullname, age, about, accept, formularioComErros } = this.state;
         return(
             <div>
                 <h1>Informações Pessoais</h1>
@@ -68,6 +68,11 @@ class Form extends Component{
                 />
 
             </form>
+
+            { formularioComErros
+            ? <p style={ { color: 'red' } }>Por favor, preencha todos os campos.</p>
+            : <p style={ { color: 'green' } }>Todos campos foram preenchidos.</p> }
+
             </div>
         );
     }
