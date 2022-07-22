@@ -1,5 +1,6 @@
 import { Component } from "react";
 import PersonalInfo from "./PersonalInfo";
+import ProfessionalInfo from "./ProfessionalInfo";
 
 class Form extends Component{
     constructor(props){
@@ -12,6 +13,10 @@ class Form extends Component{
             city: '',
             state: '',
             housingType: '',
+            alertMessage: true,
+            curriculumSummary: '',
+            jobTitle: '',
+            jobDescription: '',
         }
     }
 
@@ -34,8 +39,16 @@ class Form extends Component{
       });   
     }
 
+    onMouseEnter = () => {
+        const { alertMessage } = this.state;
+        alertMessage && alert('Preencha com cuidado esta informação');
+        this.setState({
+            alertMessage: false,
+        });
+    }
+
     render(){
-        const { fullname, email, cpf, address, city, state, housingType } = this.state;
+        const { fullname, email, cpf, address, city, state, housingType, curriculumSummary, jobTitle, jobDescription } = this.state;
         return(
             <>
                 <h1>Curriculum Vitae</h1>
@@ -56,6 +69,15 @@ class Form extends Component{
                     stateValue={state}
                     housingType={this.handleChange}
                     housingTypeValue={housingType}
+                />
+                <ProfessionalInfo
+                    curriculumSummary={this.handleChange}
+                    curriculumSummaryValue={curriculumSummary}
+                    jobTitle={this.handleChange}
+                    jobTitleValue={jobTitle}
+                    jobTitleMouseEnter={this.onMouseEnter}
+                    jobDescription={this.handleChange}
+                    jobDescriptionValue={jobDescription}
                 />
                 <button type="submit">Enviar</button>
                 </form>
