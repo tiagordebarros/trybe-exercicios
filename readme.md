@@ -105,6 +105,6 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 
 - [x] 11-1: _Componentes com estado e eventos_
 - [x] 11-2: _Formulários no React_
-- [ ] 11-3: _[Projeto - Tryunfo](https://tiagordebarros.github.io/projetos/tryunfo/index.html)_
+- [x] 11-3: _[Projeto - Tryunfo](https://tiagordebarros.github.io/projetos/tryunfo/index.html)_
 
 # [...em breve]
