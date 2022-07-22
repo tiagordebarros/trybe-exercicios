@@ -1,6 +1,7 @@
 import { Component } from "react";
 import PersonalInfo from "./PersonalInfo";
 import ProfessionalInfo from "./ProfessionalInfo";
+import CompiledForm from "./CompiledForm";
 
 class Form extends Component{
     constructor(props){
@@ -17,22 +18,28 @@ class Form extends Component{
             curriculumSummary: '',
             jobTitle: '',
             jobDescription: '',
+            submitted: false,
         }
     }
 
     handleChange = ({ target }) => {
-      const { type, checked, name  } = target;
-      let value = type === 'checkbox' || type === 'radio' ? checked : target.value;
-      if (name === 'fullname') value = value.toUpperCase();
-      if (name === 'address') value = value.replace(/[^\w\s]/gi, '');
+      const { type, checked, name, value, id  } = target;
+      let stateValue = type === 'checkbox' || type === 'radio' ? checked : value;
+      if (name === 'fullname') stateValue = value.toUpperCase();
+      if (name === 'address') stateValue = value.replace(/[^\w\s]/gi, '');
+      if (name === 'housingType' && id === 'house') {
+        stateValue = 'Casa'
+      } else if (name === 'housingType' && id === 'apartment') {
+        stateValue = 'Apartamento'
+      };
       this.setState({
-        [name]: value,
+        [name]: stateValue,
       });
     }
 
     handleBlur = ({ target }) => {
-      const { type, checked, name  } = target;
-      let value = type === 'checkbox' || type === 'radio' ? checked : target.value;
+      const { type, checked, name } = target;
+      let value = type === 'checkbox' ? checked : target.value;
       if (name === 'city') value = value.match(/^\d/) ? '' : value;
       this.setState({
         [name]: value,
@@ -47,8 +54,15 @@ class Form extends Component{
         });
     }
 
+    submittedForm = (event) => {
+      event.preventDefault();
+      this.setState({
+        submitted: true,
+      });
+    }
+
     render(){
-        const { fullname, email, cpf, address, city, state, housingType, curriculumSummary, jobTitle, jobDescription } = this.state;
+        const { fullname, email, cpf, address, city, state, housingType, curriculumSummary, jobTitle, jobDescription, submitted } = this.state;
         return(
             <>
                 <h1>Curriculum Vitae</h1>
@@ -79,8 +93,11 @@ class Form extends Component{
                     jobDescription={this.handleChange}
                     jobDescriptionValue={jobDescription}
                 />
-                <button type="submit">Enviar</button>
+                <button type="submit" onClick={this.submittedForm}>Enviar</button>
                 </form>
+                <div>
+                {submitted && <CompiledForm currentState={this.state} />}
+                </div>
             </>
         );
     }

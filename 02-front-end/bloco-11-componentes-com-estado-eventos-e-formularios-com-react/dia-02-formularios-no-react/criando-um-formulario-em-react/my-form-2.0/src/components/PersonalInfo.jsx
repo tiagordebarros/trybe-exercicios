@@ -71,7 +71,7 @@ class PersonalInfo extends Component{
                     <input type="radio" name="housingType" id="house" value={housingTypeValue} onChange={housingType} required/>Casa
                 </label>
                 <label htmlFor="apartment">
-                    <input type="radio" name="housingType" id="apartment" />Apartamento
+                    <input type="radio" name="housingType" id="apartment" value={housingTypeValue} onChange={housingType} />Apartamento
                 </label>
 
             </fieldset>
