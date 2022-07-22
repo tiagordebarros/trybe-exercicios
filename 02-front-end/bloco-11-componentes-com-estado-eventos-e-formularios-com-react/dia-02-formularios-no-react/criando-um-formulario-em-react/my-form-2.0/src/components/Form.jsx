@@ -61,6 +61,25 @@ class Form extends Component{
       });
     }
 
+    resetForm = () => {
+      this.setState(
+        {
+          fullname: '',
+          email: '',
+          cpf: '',
+          address: '',
+          city: '',
+          state: '',
+          housingType: '',
+          alertMessage: true,
+          curriculumSummary: '',
+          jobTitle: '',
+          jobDescription: '',
+          submitted: false,
+        }
+      );
+    }
+
     render(){
         const { fullname, email, cpf, address, city, state, housingType, curriculumSummary, jobTitle, jobDescription, submitted } = this.state;
         return(
@@ -94,6 +113,7 @@ class Form extends Component{
                     jobDescriptionValue={jobDescription}
                 />
                 <button type="submit" onClick={this.submittedForm}>Enviar</button>
+                <button type="reset" onClick={this.resetForm}>Limpar</button>
                 </form>
                 <div>
                 {submitted && <CompiledForm currentState={this.state} />}
