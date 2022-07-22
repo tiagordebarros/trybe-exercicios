@@ -104,7 +104,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 ##### Bloco 11 - Componentes com Estado, Eventos e Formulários com React
 
 - [x] 11-1: _Componentes com estado e eventos_
-- [ ] 11-2: _Formulários no React_
+- [x] 11-2: _Formulários no React_
 - [ ] 11-3: _[Projeto - Tryunfo](https://tiagordebarros.github.io/projetos/tryunfo/index.html)_
 
 # [...em breve]
