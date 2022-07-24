@@ -113,4 +113,9 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 12-2: _React Router_
 - [x] 12-3: _[Projeto - TrybeTunes](https://tiagordebarros.github.io/projetos/trybetunes/index.html)_
 
+##### Bloco 13 - Ciclo de Vida de Componentes e React Router
+
+- [x] 13-1: _Metodologias Ágeis_
+- [ ] 13-2: _[Projeto - Frontend Online Store](https://tiagordebarros.github.io/projetos/frontend-online-store/index.html)_
+
 # [...em breve]
