@@ -116,6 +116,6 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 ##### Bloco 13 - Ciclo de Vida de Componentes e React Router
 
 - [x] 13-1: _Metodologias Ágeis_
-- [ ] 13-2: _[Projeto - Frontend Online Store](https://tiagordebarros.github.io/projetos/frontend-online-store/index.html)_
+- [x] 13-2: _[Projeto - Frontend Online Store](https://tiagordebarros.github.io/projetos/frontend-online-store/index.html)_
 
 # [...em breve]
