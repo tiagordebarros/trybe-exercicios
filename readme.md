@@ -107,4 +107,10 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 11-2: _Formulários no React_
 - [x] 11-3: _[Projeto - Tryunfo](https://tiagordebarros.github.io/projetos/tryunfo/index.html)_
 
+##### Bloco 12 - Ciclo de Vida de Componentes e React Router
+
+- [x] 12-1: _Ciclo de vida de componentes_
+- [ ] 12-2: _React Router_
+- [ ] 12-3: _[Projeto - TrybeTunes](https://tiagordebarros.github.io/projetos/trybetunes/index.html)_
+
 # [...em breve]
