@@ -110,7 +110,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 ##### Bloco 12 - Ciclo de Vida de Componentes e React Router
 
 - [x] 12-1: _Ciclo de vida de componentes_
-- [ ] 12-2: _React Router_
+- [x] 12-2: _React Router_
 - [ ] 12-3: _[Projeto - TrybeTunes](https://tiagordebarros.github.io/projetos/trybetunes/index.html)_
 
 # [...em breve]
