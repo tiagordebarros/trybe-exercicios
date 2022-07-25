@@ -123,6 +123,15 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 14-1: _RTL - Primeiros passos_
 - [x] 14-2: _RTL - Mocks e Inputs_
 - [x] 14-3: _RTL - Testando React Router_
-- [ ] 14-4: _[Projeto - Testes em React](https://tiagordebarros.github.io/projetos/testes-em-react/index.html)_
+- [x] 14-4: _[Projeto - Testes em React](https://tiagordebarros.github.io/projetos/testes-em-react/index.html)_
+
+##### Bloco 15 - Gerenciamento de estado com Redux
+
+- [ ] 15-1: _Introdução ao Redux - O estado global da aplicação_
+- [ ] 15-2: _Usando o Redux no React_
+- [ ] 15-3: _Usando o Redux no React - Prática_
+- [ ] 15-4: _Usando o Redux no React - Actions Assíncronas_
+- [ ] 15-5: _Testes em React-Redux_
+- [ ] 15-6: _[Projeto - Trybe Wallet](https://tiagordebarros.github.io/projetos/trybe-wallet/index.html)_
 
 # [...em breve]
