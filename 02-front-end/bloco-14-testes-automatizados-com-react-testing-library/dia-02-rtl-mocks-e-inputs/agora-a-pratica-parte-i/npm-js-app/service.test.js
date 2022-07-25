@@ -1,5 +1,7 @@
 const service = require("./service");
 
+afterEach(() => jest.clearAllMocks());
+
 test('Testa se a função foi chamada, qual seu retorno e quantas vezes foi chamada.', () => {
     service.randomNumber = jest.fn().mockReturnValue(10);
 
@@ -70,4 +72,26 @@ test('Testa se a função foi chamada, qual seu retorno e quantas vezes foi cham
     service.upperCase.mockRestore();
 
     expect(service.upperCase('tiago')).toBe('TIAGO');
+  });
+
+  test('Testa se a requisição se resolveu e teve como valor "request success".', async () => {
+    service.dogPictures = jest.fn();
+
+    service.dogPictures.mockResolvedValue('request success');
+
+    service.dogPictures();
+    expect(service.dogPictures).toHaveBeenCalled();
+    expect(service.dogPictures).toHaveBeenCalledTimes(1);
+    await expect(service.dogPictures()).resolves.toBe('request success');
+    expect(service.dogPictures).toHaveBeenCalledTimes(2);
+  });
+
+  test('Testa se a requisição se resolveu e teve como valor "request failed".', async () => {
+    service.dogPictures = jest.fn();
+
+    service.dogPictures.mockRejectedValue('request failed');
+
+    expect(service.dogPictures).toHaveBeenCalledTimes(0);
+    await expect(service.dogPictures()).rejects.toBe('request failed');
+    expect(service.dogPictures).toHaveBeenCalledTimes(1);
   });
