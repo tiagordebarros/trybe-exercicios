@@ -118,4 +118,11 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 13-1: _Metodologias Ágeis_
 - [x] 13-2: _[Projeto - Frontend Online Store](https://tiagordebarros.github.io/projetos/frontend-online-store/index.html)_
 
+##### Bloco 14 - Testes automatizados com React Testing Library
+
+- [x] 14-1: _RTL - Primeiros passos_
+- [ ] 14-2: _RTL - Mocks e Inputs_
+- [ ] 14-3: _RTL - Testando React Router_
+- [ ] 14-4: _[Projeto - Testes em React](https://tiagordebarros.github.io/projetos/testes-em-react/index.html)_
+
 # [...em breve]
