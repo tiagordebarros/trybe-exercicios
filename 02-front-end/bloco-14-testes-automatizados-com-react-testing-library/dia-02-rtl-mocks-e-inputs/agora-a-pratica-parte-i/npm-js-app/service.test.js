@@ -38,3 +38,36 @@ test('Testa se a função foi chamada, qual seu retorno e quantas vezes foi cham
     expect(service.randomNumber).toHaveBeenCalledTimes(1);
     expect(service.randomNumber).toHaveBeenCalledWith(4);
   });
+
+  test('Testa se a função com mock retorna a string em caixa baixa.', () => {
+    const mockUpperCase = jest.spyOn(service, "upperCase" ).mockImplementation(string => string.toLowerCase());
+
+    expect(mockUpperCase("TIAGO")).toBe("tiago");
+    expect(service.upperCase).toHaveBeenCalled();
+    expect(service.upperCase).toHaveBeenCalledTimes(1);
+    expect(service.upperCase).toHaveBeenCalledWith('TIAGO');
+  });
+
+  test('Testa se a função com mock retorna a última letra de uma string.', () => {
+    const mockFirstLetter = jest.spyOn(service, "firstLetter").mockImplementation((string) => string.charAt(string.length - 1));
+
+    expect(mockFirstLetter('Tiago')).toBe('o');
+    expect(service.firstLetter).toHaveBeenCalled();
+    expect(service.firstLetter).toHaveBeenCalledTimes(1);
+    expect(service.firstLetter).toHaveBeenCalledWith('Tiago');
+  });
+
+  test('Testa se a função com mock retorna três strings e as concatena.', () => {
+    const mockConcatStrings = jest.spyOn(service, "concatStrings").mockImplementation((firstString, secondString, thirdString) => (firstString.concat(secondString)).concat(thirdString));
+
+    expect(mockConcatStrings('Tiago', 'e', 'Ione')).toBe('TiagoeIone');
+    expect(service.concatStrings).toHaveBeenCalled();
+    expect(service.concatStrings).toHaveBeenCalledTimes(1);
+    expect(service.concatStrings).toHaveBeenCalledWith('Tiago', 'e', 'Ione');
+  });
+
+  test('Testa se ao restaurar a implementação da primeira função, essa retorna em caixa alta', () => {
+    service.upperCase.mockRestore();
+
+    expect(service.upperCase('tiago')).toBe('TIAGO');
+  });
