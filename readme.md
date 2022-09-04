@@ -130,7 +130,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 15-1: _Introdução ao Redux - O estado global da aplicação_
 - [x] 15-2: _Usando o Redux no React_
 - [x] 15-3: _Usando o Redux no React - Prática_
-- [ ] 15-4: _Usando o Redux no React - Actions Assíncronas_
+- [x] 15-4: _Usando o Redux no React - Actions Assíncronas_
 - [ ] 15-5: _Testes em React-Redux_
 - [ ] 15-6: _[Projeto - Trybe Wallet](https://tiagordebarros.github.io/projetos/trybe-wallet/index.html)_
 
