@@ -132,6 +132,10 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 15-3: _Usando o Redux no React - Prática_
 - [x] 15-4: _Usando o Redux no React - Actions Assíncronas_
 - [x] 15-5: _Testes em React-Redux_
-- [ ] 15-6: _[Projeto - Trybe Wallet](https://tiagordebarros.github.io/projetos/trybe-wallet/index.html)_
+- [x] 15-6: _[Projeto - Trybe Wallet](https://tiagordebarros.github.io/projetos/trybe-wallet/index.html)_
+
+##### Bloco 16 - Projeto - Jogo de Trivia
+
+- [ ] 16-1: _Projeto - Jogo de Trivia_
 
 # [...em breve]
