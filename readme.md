@@ -19,6 +19,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - Desenvolvimento de software na vida real :globe_with_meridians:
 - Soft Skills :heart:
 - Metodologias ágeis :airplane:
+- Carreira :rocket:
 
 ## Fundamentos do Desenvolvimento Web :heavy_check_mark:
 
@@ -86,7 +87,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 8-5: _JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais_
 - [x] 8-6: _[Projeto - Zoo functions](https://tiagordebarros.github.io/projetos/zoo-functions/index.html)_
 
-## Desenvolvimento Front-end :white_check_mark:
+## Desenvolvimento Front-end :heavy_check_mark:
 
 ##### Bloco 9 - JavaScript e Testes Assíncronos
 
@@ -147,6 +148,15 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 
 ##### Bloco 18 - Projeto - App de Receitas
 
-- [ ] 18-1: _Projeto - App de Receitas_
+- [x] 18-1: _[Projeto - App de Receitas](https://tiagordebarros.github.io/projetos/recipes-app/index.html)_
+
+## Desenvolvimento Back-end :white_check_mark:
+
+##### Bloco 19 - Docker: Utilizando Containers
+
+- [ ] 19-1: _Utilizando Containers - Docker_
+- [ ] 19-2: _Manipulando Imagens no Docker_
+- [ ] 19-3: _Orquestrando Containers com Docker Compose_
+- [ ] 19-4: _[Projeto - Docker Todo-List](https://tiagordebarros.github.io/projetos/docker-todo-list/index.html)_
 
 # [...em breve]
