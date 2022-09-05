@@ -142,7 +142,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 
 - [x] 17-1: _Context API do React_
 - [x] 17-2: _React Hooks - useState e useContext_
-- [ ] 17-3: _React Hooks - useEffect e Hooks customizados_
+- [x] 17-3: _React Hooks - useEffect e Hooks customizados_
 - [ ] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://tiagordebarros.github.io/projetos/starwars-datatable/index.html)_
 
 # [...em breve]
