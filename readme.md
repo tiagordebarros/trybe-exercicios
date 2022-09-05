@@ -143,6 +143,10 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 17-1: _Context API do React_
 - [x] 17-2: _React Hooks - useState e useContext_
 - [x] 17-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://tiagordebarros.github.io/projetos/starwars-datatable/index.html)_
+- [x] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://tiagordebarros.github.io/projetos/starwars-planets-search/index.html)_
+
+##### Bloco 18 - Projeto - App de Receitas
+
+- [ ] 18-1: _Projeto - App de Receitas_
 
 # [...em breve]
