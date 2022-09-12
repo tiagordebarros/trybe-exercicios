@@ -7,6 +7,8 @@ services:
       - 3000:3000
     depends_on:
       - backend
+    volumes:
+      - ./logs:/var/log/frontend
   backend:
     build: backend/
     restart: on-failure
@@ -19,3 +21,8 @@ services:
   database:
     image: betrybe/docker-compose-example-database:v1
     restart: on-failure
+    volumes:
+      - dados-do-banco:/data/db
+volumes:
+  dados-do-banco:
+  
