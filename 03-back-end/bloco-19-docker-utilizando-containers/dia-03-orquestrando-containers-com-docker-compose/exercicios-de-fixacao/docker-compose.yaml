@@ -1,14 +1,14 @@
 version: '3'
 services:
   frontend:
-    build: /frontend
+    build: frontend/
     restart: on-failure
     ports:
       - 3000:3000
     depends_on:
       - backend
   backend:
-    build: /backend
+    build: backend/
     restart: on-failure
     ports:
       - 3001:3001
