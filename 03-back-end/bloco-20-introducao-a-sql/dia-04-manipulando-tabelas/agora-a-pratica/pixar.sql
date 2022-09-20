@@ -44,6 +44,7 @@ INSERT INTO BoxOffice(movie_id, rating, domestic_sales, international_sales)
 --
 
 USE Pixar;
+SET SQL_SAFE_UPDATES = 0;
 
 -- Exercício 1
 INSERT INTO Movies(title, director, year, length_minutes)
@@ -71,3 +72,7 @@ INSERT INTO BoxOffice (movie_id, rating, domestic_sales, international_sales)
   VALUES (8, 8.5, 300000000, 250000000),
          (10, 7.4, 460000000, 510000000),
          (11, 9.9, 290000000, 280000000);
+
+-- Exercício 6
+DELETE FROM Movies
+WHERE id = 14;
