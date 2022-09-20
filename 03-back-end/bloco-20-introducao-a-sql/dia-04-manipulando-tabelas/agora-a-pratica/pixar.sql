@@ -76,3 +76,10 @@ INSERT INTO BoxOffice (movie_id, rating, domestic_sales, international_sales)
 -- Exercício 6
 DELETE FROM Movies
 WHERE id = 14;
+
+-- Exercício 7
+DELETE FROM BoxOffice
+WHERE movie_id IN(2, 10, 12);
+
+DELETE FROM Movies
+WHERE director = 'Andrew Staton';
