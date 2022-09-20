@@ -60,3 +60,8 @@ VALUES(8, 6.8, 450000000, 370000000);
 UPDATE Movies
 SET director = 'Andrew Staton'
 WHERE title = 'Procurando Nemo';
+
+-- Exercício 4
+UPDATE Movies
+SET title = 'Ratatouille', year = 2007
+WHERE id = 3;
