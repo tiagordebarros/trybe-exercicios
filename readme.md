@@ -164,7 +164,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 20-1: _Banco de dados SQL_
 - [x] 20-2: _Encontrando dados em um banco de dados_
 - [x] 20-3: _Filtrando dados de forma específica_
-- [ ] 20-4: _Manipulando tabelas_
+- [x] 20-4: _Manipulando tabelas_
 - [ ] 20-5: _[Projeto - All For One](https://tiagordebarros.github.io/projetos/all-for-one/index.html)_
 
 # [...em breve]
