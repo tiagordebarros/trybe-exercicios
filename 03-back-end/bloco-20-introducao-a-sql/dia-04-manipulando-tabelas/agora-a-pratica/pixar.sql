@@ -53,3 +53,5 @@ VALUES('Monstros SA', 'Pete Docter', 2001, 92),
 ('WALL-E', 'Pete Docter', 2008, 104);
 
 -- Exercício 2
+INSERT INTO BoxOffice (movie_id, rating, domestic_sales, international_sales)
+VALUES(8, 6.8, 450000000, 370000000);
