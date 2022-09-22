@@ -170,7 +170,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 ##### Bloco 21 -  Funções SQL, JOINs e Normalização
 
 - [x] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs_
+- [x] 21-2: _Descomplicando JOINs_
 - [ ] 21-3: _Transformando ideias em um modelo de banco de dados_
 - [ ] 21-4: _Aula ao vivo + [Projeto -  One For All](https://tiagordebarros.github.io/projetos/mysql-one-for-all-todo-list/index.html)_
 
