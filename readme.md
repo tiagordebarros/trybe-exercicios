@@ -172,6 +172,15 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 21-1: _Funções mais usadas no SQL_
 - [x] 21-2: _Descomplicando JOINs_
 - [x] 21-3: _Transformando ideias em um modelo de banco de dados_
-- [ ] 21-4: _Aula ao vivo + [Projeto -  One For All](https://tiagordebarros.github.io/projetos/mysql-one-for-all-todo-list/index.html)_
+- [x] 21-4: _Aula ao vivo + [Projeto -  One For All](https://tiagordebarros.github.io/projetos/mysql-all-for-one/index.html)_
+
+##### Bloco 22 - Introdução ao desenvolvimento Web com Node.js
+
+- [ ] 22-1: _Node.js: Runtime Assíncrono_
+- [ ] 22-2: _Node.js: API REST com Express_
+- [ ] 22-3: _Node.js: Testes de Integração_
+- [ ] 22-4: _Node.js: Express e Middlewares_
+- [ ] 22-5: _Node.js: Express e MySQL_
+- [ ] 22-6: _Atividades + [Projeto - Talker Manager](https://tiagordebarros.github.io/projetos/talker-manager/index.html)_
 
 # [...em breve]
