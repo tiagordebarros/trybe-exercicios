@@ -1,7 +1,7 @@
 const readline = require('readline-sync');
 
-const weight = readline.questionInt('What’ your weight? ');
-const height = readline.questionFloat('What’ your height? ');
+const weight = readline.questionInt('Qual é o seu peso (Kg) ? ');
+const height = readline.questionFloat('Qual é a sua altura (m) ? ');
 
 const bmiStatus = (imc) => {
     if(imc < 18.5) {
