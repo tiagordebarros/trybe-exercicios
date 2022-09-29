@@ -1,3 +1,5 @@
+const { log } = require('console');
+
 const fs = require('fs').promises;
 
 const readAll = async () => {
@@ -22,5 +24,17 @@ const getCharacterById = async (identify) => {
 
   return getById;
 }
-getCharacterById(1);
+// getCharacterById(1);
 
+const filterCharacters = async () => {
+  const content = await fs.readFile('./simpsons.json', 'utf-8');
+  const simpsons = JSON.parse(content);
+  
+  const filterSomeCharacters = simpsons.filter(({ id }) => Number(id) !== 6 && Number(id) !== 10);
+  console.log(filterSomeCharacters);
+
+  const result = await fs.writeFile('./simpsons.json', JSON.stringify(filterSomeCharacters));
+  return result;
+}
+
+filterCharacters();
