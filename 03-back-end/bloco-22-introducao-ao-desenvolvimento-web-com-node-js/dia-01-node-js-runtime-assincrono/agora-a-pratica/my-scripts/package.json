@@ -4,6 +4,8 @@
   "description": "",
   "main": "bmi.js",
   "scripts": {
+    "start": "node .",
+    "bmi": "node bmi.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tiago Ribeiro de Barros",
