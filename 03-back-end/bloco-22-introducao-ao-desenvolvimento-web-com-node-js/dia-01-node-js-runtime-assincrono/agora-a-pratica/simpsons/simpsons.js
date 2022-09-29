@@ -7,5 +7,20 @@ const readAll = async () => {
    const result = strings.forEach((character) => console.log(character)); // Exibidos cada um dos personagens
    return result;
 }
+// readAll();
 
-readAll();
+const getCharacterById = async (identify) => {
+  const content = await fs.readFile('./simpsons.json', 'utf-8');
+  const simpsons = JSON.parse(content);
+
+  const getById = simpsons.filter(({ id }) => id === String(identify));
+  console.log(getById);
+  
+  if(!getById){
+      throw new error('ID não encontrado!');
+  }
+
+  return getById;
+}
+getCharacterById(1);
+
