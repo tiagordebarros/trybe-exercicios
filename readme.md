@@ -176,7 +176,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 
 ##### Bloco 22 - Introdução ao desenvolvimento Web com Node.js
 
-- [ ] 22-1: _Node.js: Runtime Assíncrono_
+- [x] 22-1: _Node.js: Runtime Assíncrono_
 - [ ] 22-2: _Node.js: API REST com Express_
 - [ ] 22-3: _Node.js: Testes de Integração_
 - [ ] 22-4: _Node.js: Express e Middlewares_
