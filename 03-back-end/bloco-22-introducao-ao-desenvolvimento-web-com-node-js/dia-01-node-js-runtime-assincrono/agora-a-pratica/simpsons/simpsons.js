@@ -1,5 +1,3 @@
-const { log } = require('console');
-
 const fs = require('fs').promises;
 
 const readAll = async () => {
@@ -51,4 +49,21 @@ const createSimpsonsFamily = async () => {
   const result = await fs.writeFile('./simpsonFamily.json', JSON.stringify(simpsonFamily));
   return result;
 }
-createSimpsonsFamily();
+// createSimpsonsFamily();
+
+const addNelsonToFamily = async () => {
+  const content = await fs.readFile('./simpsonFamily.json', 'utf-8');
+  const simpsonFamily = JSON.parse(content);
+
+  const nelsonMuntz = { id: '5', name: 'Nelson Muntz'};
+
+  const simpsonFamilyNewMember = [
+    ...simpsonFamily,
+    nelsonMuntz
+  ]
+  console.log(simpsonFamilyNewMember);
+
+  const result = await fs.writeFile('./simpsonFamily.json', JSON.stringify(simpsonFamilyNewMember));
+  return result;
+}
+addNelsonToFamily();
