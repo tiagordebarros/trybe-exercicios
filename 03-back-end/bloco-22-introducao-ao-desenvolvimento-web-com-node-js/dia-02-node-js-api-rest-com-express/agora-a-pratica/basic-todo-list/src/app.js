@@ -20,6 +20,10 @@ const activities = [
     },
 ];
 
+app.get('/myActivities', (_req, res) => {
+    res.status(200).json({ activities });
+});
+
 app.get('/myActivities/:id', (req, res) => {
     const { id } = req.params;
     
