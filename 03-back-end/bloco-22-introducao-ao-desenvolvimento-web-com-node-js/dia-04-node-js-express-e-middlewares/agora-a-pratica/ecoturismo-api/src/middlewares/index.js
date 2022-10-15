@@ -1,3 +1,4 @@
+const auth = require('./auth');
 const validateName = require('./validateName');
 const validatePrice = require('./validatePrice');
 const validateDescription = require('./validateDescription');
@@ -7,6 +8,7 @@ const validateDifficulty = require('./validateDifficulty');
 const validateSignup = require('./validateSignup');
 
 module.exports = {
+    auth,
     validateName,
     validatePrice,
     validateDescription,

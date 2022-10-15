@@ -3,6 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 const {
+    auth,
     validateName,
     validatePrice, 
     validateDescription, 
@@ -12,6 +13,7 @@ const {
    } = require('../middlewares');
 
 router.post('/',
+ auth,
  validateName,
  validatePrice, 
  validateDescription, 
