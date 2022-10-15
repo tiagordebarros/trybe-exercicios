@@ -1,25 +1,12 @@
 const express = require('express');
-const {
-   validateName,
-   validatePrice, 
-   validateDescription, 
-   validateCreatedAt, 
-   validateRating, 
-   validateDifficulty,
-  } = require('./middlewares');
+const { activitiesRouter } = require('./routes');
 
 const app = express();
 
 app.use(express.json());
 
-app.post('/activities',
- validateName,
- validatePrice, 
- validateDescription, 
- validateCreatedAt, 
- validateRating, 
- validateDifficulty,
- (_req, res) => res.status(201)
-  .json({ message: 'Atividade cadastrada com sucesso!' }));
+app.use('/activities', activitiesRouter);
+
+app.use((_req, res) => res.status(404).json({ message: 'Não encontrado!' }));
 
 module.exports = app;
