@@ -7,6 +7,4 @@ const validateName = (req, res, next) => {
     return next();
 };
 
-module.exports = {
-    validateName,
-};
+module.exports = validateName;
