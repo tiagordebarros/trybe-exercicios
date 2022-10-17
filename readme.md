@@ -180,7 +180,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 22-2: _Node.js: API REST com Express_
 - [x] 22-3: _Node.js: Testes de Integração_
 - [x] 22-4: _Node.js: Express e Middlewares_
-- [ ] 22-5: _Node.js: Express e MySQL_
+- [x] 22-5: _Node.js: Express e MySQL_
 - [ ] 22-6: _Atividades + [Projeto - Talker Manager](https://tiagordebarros.github.io/projetos/talker-manager/index.html)_
 
 # [...em breve]
