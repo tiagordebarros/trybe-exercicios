@@ -186,7 +186,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 ##### Bloco 23 - Arquitetura de Software: Model, Service e Controller
 
 - [x] 23-1: _Arquitetura de Software: Camada Model_
-- [ ] 23-2: _Arquitetura de Software: Camada Service_
+- [x] 23-2: _Arquitetura de Software: Camada Service_
 - [ ] 23-3: _Arquitetura de Software: Camada Controller_
 - [ ] 23-4: _[Projeto - Store Manager](https://tiagordebarros.github.io/projetos/store-manager/index.html)_
 
