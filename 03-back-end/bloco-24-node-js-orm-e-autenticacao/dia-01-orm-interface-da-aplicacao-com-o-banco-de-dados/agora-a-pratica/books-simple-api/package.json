@@ -1,0 +1,23 @@
+{
+  "name": "books-simple-api",
+  "version": "1.0.0",
+  "description": "A simple books api.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "books",
+    "library"
+  ],
+  "author": "Tiago Ribeiro de Barros",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.3"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.5.1"
+  }
+}
