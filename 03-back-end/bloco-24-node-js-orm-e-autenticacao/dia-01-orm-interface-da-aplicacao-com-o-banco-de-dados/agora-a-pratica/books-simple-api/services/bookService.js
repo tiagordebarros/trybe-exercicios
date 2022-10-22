@@ -21,9 +21,15 @@ const update = async (id, { title, author, pageQuantity }) => {
   return updatedBook;
 };
 
+const remove = async (id) => {
+  const deletedBook = await book.destroy({ where: { id } });
+  return deletedBook;
+}
+
 module.exports = {
   getAll,
   getById,
   create,
   update,
+  remove,
 };
