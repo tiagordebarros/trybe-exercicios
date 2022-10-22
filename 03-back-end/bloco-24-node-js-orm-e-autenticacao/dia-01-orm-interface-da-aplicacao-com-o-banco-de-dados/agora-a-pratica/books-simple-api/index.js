@@ -10,6 +10,7 @@ app.use(express.json());
 
 app.get('/books', bookController.getAll);
 app.get('/books/:id', bookController.getById);
+app.post('/books', bookController.create);
 
 app.listen(port, () => {
     console.log(`Servidor escutando na porta ${port}`);
