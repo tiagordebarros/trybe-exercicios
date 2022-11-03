@@ -1,4 +1,7 @@
 const Joi = require('joi');
+const jwt = require('jsonwebtoken');
+
+const { JWT_SECRET } = process.env;
 
 const validateBody = (body) => Joi.object({
   username: Joi.string().min(5).alphanum().required()
@@ -13,7 +16,13 @@ const validateBody = (body) => Joi.object({
     }),
 }).validate(body);
 
-module.exports = (req, _res, next) => {
+module.exports = (req, res, next) => {
   const { error } = validateBody(req.body);
   if (error) return next(error);
+
+  const token = jwt.sign({ username: req.body.username, admin: false }, JWT_SECRET, {
+    expiresIn: '1h',
+  });
+
+  return res.status(200).json({ token });
 };
