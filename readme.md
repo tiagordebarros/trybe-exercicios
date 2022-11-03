@@ -196,6 +196,10 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 - [x] 24-2: _ORM - Associations 1:1 e 1:N_
 - [x] 24-3: _ORM - Associations N:N e Transactions_
 - [x] 24-4: _JWT - (JSON Web Token)_
-- [ ] 24-5: _[Projeto - API de Blogs](https://tiagordebarros.github.io/projetos/api-de-blogs/index.html)_
+- [x] 24-5: _[Projeto - API de Blogs](https://tiagordebarros.github.io/projetos/blogs-api/index.html)_
+
+##### Bloco 25 - Masterclass: Implantação de Aplicações na Nuvem
+
+- [ ] 25-1: _Infraestrutura: Deploy com Railway_
 
 # [...em breve]
