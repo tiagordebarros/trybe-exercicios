@@ -29,3 +29,7 @@ export function rectangle(base: number, height: number): number {
 export function rhombus(D: number, d: number): number {
   return (D * d) / 2;
 }
+
+export function trapezoid(B: number, b: number, h: number): number {
+  return ((B + b) * h) / 2;
+}
