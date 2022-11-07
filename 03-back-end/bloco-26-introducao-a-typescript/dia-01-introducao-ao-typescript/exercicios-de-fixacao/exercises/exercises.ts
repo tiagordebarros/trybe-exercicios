@@ -13,3 +13,7 @@ export function add(x: number, y: number): number {
 export function sumArray(numbers: number[]): number {
   return numbers.reduce(add, 0);
 }
+
+export function triangle(base: number, height: number): number {
+  return (base * height) / 2;
+}
