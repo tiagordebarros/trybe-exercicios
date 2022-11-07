@@ -21,3 +21,7 @@ export function triangle(base: number, height: number): number {
 export function square(side: number): number {
   return side ** 2;
 }
+
+export function rectangle(base: number, height: number): number {
+  return base * height;
+}
