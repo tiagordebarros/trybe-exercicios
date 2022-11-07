@@ -200,6 +200,13 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 
 ##### Bloco 25 - Masterclass: Implantação de Aplicações na Nuvem
 
-- [ ] 25-1: _Infraestrutura: Deploy com Railway_
+- [x] 25-1: _Infraestrutura: Deploy com Railway_
+
+##### Bloco 26 - Introdução a TypeScript
+
+- [ ] 26-1: _Introdução ao TypeScript_
+- [ ] 26-2: _Tipagem Estática e Generics_
+- [ ] 26-3: _Express com TypeScript_
+- [ ] 26-4: _[Projeto - Trybesmith](https://tiagordebarros.github.io/projetos/trybesmith/index.html)_
 
 # [...em breve]
