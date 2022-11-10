@@ -204,7 +204,7 @@ Além disso, ao longo de toda a formação, ainda são trabalhados:
 
 ##### Bloco 26 - Introdução a TypeScript
 
-- [ ] 26-1: _Introdução ao TypeScript_
+- [x] 26-1: _Introdução ao TypeScript_
 - [ ] 26-2: _Tipagem Estática e Generics_
 - [ ] 26-3: _Express com TypeScript_
 - [ ] 26-4: _[Projeto - Trybesmith](https://tiagordebarros.github.io/projetos/trybesmith/index.html)_
