@@ -1,0 +1,1 @@
+type Vowels = 'a' | 'b' | 'c' | 'd' | 'e';

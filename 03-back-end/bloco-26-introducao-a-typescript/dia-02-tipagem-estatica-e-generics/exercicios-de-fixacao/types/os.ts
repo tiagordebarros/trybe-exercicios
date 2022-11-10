@@ -1,0 +1,1 @@
+type OS = 'linux' | 'macos' | 'windows';
