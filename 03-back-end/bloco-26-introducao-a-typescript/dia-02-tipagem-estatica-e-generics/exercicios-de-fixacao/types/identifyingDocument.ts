@@ -1,0 +1,1 @@
+type IdentifyingDocument = string | number;
